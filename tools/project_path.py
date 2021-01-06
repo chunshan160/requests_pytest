@@ -34,8 +34,8 @@ log_path = os.path.join(project_path, 'TestResult', 'log')
 # 上传图片文件地址
 image_path = os.path.join(project_path, "Source", "picture.jpg")
 
-# allure_html报告保存地址
-allure_html = os.path.join(project_path, "TestResult", "Allure", "html")
+# allure_report报告保存地址
+allure_report = os.path.join(project_path, "TestResult", "Allure", "report")
 
 # allure_result保存地址
 allure_result = os.path.join(project_path, "TestResult", "Allure", "result")
