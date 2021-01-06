@@ -1,4 +1,0 @@
-[35mDEBUG   [0m 春衫:UserLog.py:66 请求头：{'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Content-Length': '59'}
-[35mDEBUG   [0m 春衫:UserLog.py:66 请求正文：{'mobile_phone': '15815541764', 'pwd': 'lemon123456789012'}
-[35mDEBUG   [0m 春衫:UserLog.py:66 响应头：{'Server': 'nginx/1.4.2', 'Date': 'Wed, 06 Jan 2021 02:20:17 GMT', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive'}
-[35mDEBUG   [0m 春衫:UserLog.py:66 响应正文：{"code":1001,"msg":"账号信息错误","data":null,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}

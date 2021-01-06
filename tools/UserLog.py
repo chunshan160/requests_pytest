@@ -77,6 +77,7 @@ class UserLog:
         # 关闭日志收集器(渠道)
         my_logger.removeHandler(ch)
         my_logger.removeHandler(fh)
+        fh.close()
 
     def debug(self, msg, interface, case_id):
         self.user_log(msg, 'DEBUG', interface, case_id)

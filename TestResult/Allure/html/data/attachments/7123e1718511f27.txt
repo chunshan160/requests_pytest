@@ -1,4 +1,0 @@
-[35mDEBUG   [0m 春衫:UserLog.py:66 请求头：{'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer XXXXXXXXX', 'Content-Length': '42'}
-[35mDEBUG   [0m 春衫:UserLog.py:66 请求正文：{'member_id': 10024280, 'amount': 10000.0}
-[35mDEBUG   [0m 春衫:UserLog.py:66 响应头：{'Server': 'nginx/1.4.2', 'Date': 'Wed, 06 Jan 2021 02:20:18 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive'}
-[35mDEBUG   [0m 春衫:UserLog.py:66 响应正文：{"code":1003,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved","msg":"无法解析的JSON值，请检查token或Authorization请求头"}
