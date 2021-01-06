@@ -1,0 +1,124 @@
+{
+  "uid" : "43a109a49c28c0b0",
+  "name" : "test_login[case_info11]",
+  "fullName" : "test_2_login.TestLogin#test_login[case_info11]",
+  "historyId" : "3d1ef7b1bd696fd971772d029dd564bc",
+  "time" : {
+    "start" : 1609899621118,
+    "stop" : 1609899621198,
+    "duration" : 80
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "对当前的case进行参数化替换",
+      "time" : {
+        "start" : 1609899621118,
+        "stop" : 1609899621118,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "发起请求",
+      "time" : {
+        "start" : 1609899621118,
+        "stop" : 1609899621198,
+        "duration" : 80
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "响应结果断言",
+      "time" : {
+        "start" : 1609899621198,
+        "stop" : 1609899621198,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "524f79dbfbb12a93",
+      "name" : "log",
+      "source" : "524f79dbfbb12a93.txt",
+      "type" : "text/plain",
+      "size" : 828
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 3,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "登录接口"
+  }, {
+    "name" : "story",
+    "value" : "测试登录接口"
+  }, {
+    "name" : "parentSuite"
+  }, {
+    "name" : "suite",
+    "value" : "test_2_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-4EMDDAT"
+  }, {
+    "name" : "thread",
+    "value" : "12572-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_2_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_info",
+    "value" : "{'case_id': 12, 'interface': 'login', 'title': '密码为17位', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\"}', 'method': 'POST', 'url': '/member/login', 'input_params': '{\\n  \"mobile_phone\": \"15815541764\",\\n  \"pwd\": \"lemon123456789012\"\\n}', 'expected': '{\\n  \"code\": 1001,\\n  \"msg\": \"账号信息错误\"\\n}', 'check_SQL': None, 'sheet_name': 'login'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "43a109a49c28c0b0.json",
+  "parameterValues" : [ "{'case_id': 12, 'interface': 'login', 'title': '密码为17位', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\"}', 'method': 'POST', 'url': '/member/login', 'input_params': '{\\n  \"mobile_phone\": \"15815541764\",\\n  \"pwd\": \"lemon123456789012\"\\n}', 'expected': '{\\n  \"code\": 1001,\\n  \"msg\": \"账号信息错误\"\\n}', 'check_SQL': None, 'sheet_name': 'login'}" ]
+}

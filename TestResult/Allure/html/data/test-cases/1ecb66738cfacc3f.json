@@ -1,0 +1,124 @@
+{
+  "uid" : "1ecb66738cfacc3f",
+  "name" : "test_add_loan[case_info4]",
+  "fullName" : "test_5_add_loan.TestAddLoan#test_add_loan[case_info4]",
+  "historyId" : "17b740365c8c421a30cd6307298ba08e",
+  "time" : {
+    "start" : 1609899623338,
+    "stop" : 1609899623418,
+    "duration" : 80
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "对当前的case进行参数化替换",
+      "time" : {
+        "start" : 1609899623338,
+        "stop" : 1609899623338,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "发起请求",
+      "time" : {
+        "start" : 1609899623338,
+        "stop" : 1609899623418,
+        "duration" : 80
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "响应结果断言",
+      "time" : {
+        "start" : 1609899623418,
+        "stop" : 1609899623418,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "a95940faa8af4510",
+      "name" : "log",
+      "source" : "a95940faa8af4510.txt",
+      "type" : "text/plain",
+      "size" : 1080
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 3,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "添加项目接口"
+  }, {
+    "name" : "story",
+    "value" : "测试添加项目接口"
+  }, {
+    "name" : "parentSuite"
+  }, {
+    "name" : "suite",
+    "value" : "test_5_add_loan"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestAddLoan"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-4EMDDAT"
+  }, {
+    "name" : "thread",
+    "value" : "12572-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_5_add_loan"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_info",
+    "value" : "{'case_id': 5, 'interface': 'addLoan', 'title': '借款人id为空', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\",\"Authorization\":\"Bearer {{token3}}\"}', 'method': 'POST', 'url': '/loan/add', 'input_params': '{\\n    \"title\":\"购买测试课程_5\",\\n    \"amount\":500000.00,\\n    \"loan_rate\":23.0,\\n    \"loan_term\":45,\\n    \"loan_date_type\":2,\\n    \"bidding_days\":9\\n}', 'expected': '{\\n  \"code\": 1,\\n  \"msg\": \"用户id为空\"\\n}', 'check_SQL': None, 'sheet_name': 'addLoan'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1ecb66738cfacc3f.json",
+  "parameterValues" : [ "{'case_id': 5, 'interface': 'addLoan', 'title': '借款人id为空', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\",\"Authorization\":\"Bearer {{token3}}\"}', 'method': 'POST', 'url': '/loan/add', 'input_params': '{\\n    \"title\":\"购买测试课程_5\",\\n    \"amount\":500000.00,\\n    \"loan_rate\":23.0,\\n    \"loan_term\":45,\\n    \"loan_date_type\":2,\\n    \"bidding_days\":9\\n}', 'expected': '{\\n  \"code\": 1,\\n  \"msg\": \"用户id为空\"\\n}', 'check_SQL': None, 'sheet_name': 'addLoan'}" ]
+}

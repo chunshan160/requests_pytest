@@ -48,11 +48,8 @@ class UserLog:
         log_file_name = interface + "_" + str(case_id) + ".log"
         file_path = folder_path + "\\" + log_file_name
 
-        #创建文件
-        if not os.path.exists(file_path):
-            os.system(file_path)
-
         # 创建日志文件 写入级别
+
         fh = logging.FileHandler(file_path, encoding='utf-8')
         fh.setLevel(logger_output_level)
         fh.setFormatter(formatter)
@@ -100,6 +97,8 @@ class UserLog:
 if __name__ == '__main__':
     my_logger = UserLog()
     my_logger.debug("测试", 'login', 1)
+    my_logger.debug("测试2", 'login', 1)
+    my_logger.debug("测试2", 'login', 2)
     # my_logger.info('测试')
     # UserLog().user_log('测试一下1', 'ERROR')
     # UserLog().user_log('测试一下2', 'ERROR')

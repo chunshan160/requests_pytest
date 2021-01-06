@@ -1,0 +1,124 @@
+{
+  "uid" : "159589607797fc8c",
+  "name" : "test_get_user_info[case_info0]",
+  "fullName" : "test_3_get_user_info.TestGetUserInfo#test_get_user_info[case_info0]",
+  "historyId" : "26cd7f0dc6d72908f21b796761da0266",
+  "time" : {
+    "start" : 1609899621478,
+    "stop" : 1609899621548,
+    "duration" : 70
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "对当前的case进行参数化替换",
+      "time" : {
+        "start" : 1609899621478,
+        "stop" : 1609899621478,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "发起请求",
+      "time" : {
+        "start" : 1609899621478,
+        "stop" : 1609899621548,
+        "duration" : 70
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "响应结果断言",
+      "time" : {
+        "start" : 1609899621548,
+        "stop" : 1609899621548,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "9bb1ce4618dbc15c",
+      "name" : "log",
+      "source" : "9bb1ce4618dbc15c.txt",
+      "type" : "text/plain",
+      "size" : 1055
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 3,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "获取用户信息接口"
+  }, {
+    "name" : "story",
+    "value" : "测试获取用户信息接口"
+  }, {
+    "name" : "parentSuite"
+  }, {
+    "name" : "suite",
+    "value" : "test_3_get_user_info"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestGetUserInfo"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-4EMDDAT"
+  }, {
+    "name" : "thread",
+    "value" : "12572-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_3_get_user_info"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_info",
+    "value" : "{'case_id': 1, 'interface': 'getUserInfo', 'title': '正常获取用户信息-管理员', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\",\"Authorization\":\"Bearer {{token1}}\"}', 'method': 'GET', 'url': '/member/{{member_id1}}/info', 'input_params': None, 'expected': '{\\n    \"code\": 0,\\n    \"msg\": \"OK\",\\n    \"data.id\": {{member_id1}},\\n\"data.mobile_phone\": \"{{mobile_phone1}}\"\\n}', 'check_SQL': None, 'sheet_name': 'getUserInfo'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "159589607797fc8c.json",
+  "parameterValues" : [ "{'case_id': 1, 'interface': 'getUserInfo', 'title': '正常获取用户信息-管理员', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\",\"Authorization\":\"Bearer {{token1}}\"}', 'method': 'GET', 'url': '/member/{{member_id1}}/info', 'input_params': None, 'expected': '{\\n    \"code\": 0,\\n    \"msg\": \"OK\",\\n    \"data.id\": {{member_id1}},\\n\"data.mobile_phone\": \"{{mobile_phone1}}\"\\n}', 'check_SQL': None, 'sheet_name': 'getUserInfo'}" ]
+}
