@@ -8,9 +8,7 @@ import os
 import pytest
 import sys
 import shutil
-
-
-sys.path.append("D:\Pycharm_workspace\Hobay\Requests_Pytest")
+sys.path.append(os.path.split(os.path.split(os.path.realpath(__file__))[0])[0])
 from tools.project_path import log_path
 from Base.GlobalEnvironment import GlobalEnvironment
 
@@ -31,7 +29,7 @@ def del_file():
 
     #代替parametrize的一种思路
 # def getCaseDataFromExcel(sheet):
-#     caseInfoList = DoExcel.getCaseDataFromExcel(test_case_path, sheet)
+#     caseInfoList = DoExcel.getCaseDataFromExcel(test_data_path, sheet)
 #     return caseInfoList
 #
 #

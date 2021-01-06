@@ -6,19 +6,18 @@
 
 import pytest
 import jmespath
-import requests
 import allure
 
 from tools.do_excel import DoExcel
 from tools.http_request import HttpRequest
-from tools.project_path import test_case_path
+from tools.project_path import test_data_path
 from Base.BaseCase import BaseCase
 from Base.GlobalEnvironment import GlobalEnvironment
 
 @pytest.mark.run(order=2)
 @allure.feature('登录接口')
 class TestLogin(BaseCase):
-    caseInfoList = DoExcel.getCaseDataFromExcel(test_case_path, "login")
+    caseInfoList = DoExcel.getCaseDataFromExcel(test_data_path, "login")
 
     @allure.story("测试登录接口")
     @pytest.mark.parametrize("case_info", caseInfoList)

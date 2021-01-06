@@ -14,5 +14,5 @@ print(allure_result)
 
 # 生成测试报告
 os.system(f"allure generate {allure_result} -o {allure_html} --clean")
-#pytest -v -s --alluredir D:\Pycharm_workspace\Hobay\Requests_Pytest\Outputs\Allure\result --clean-alluredir
-#allure generate D:\Pycharm_workspace\Hobay\Requests_Pytest\Outputs\Allure\result -o D:\Pycharm_workspace\Hobay\Requests_Pytest\Outputs\Allure\html --clean
+#pytest -v -s --alluredir D:\Pycharm_workspace\Hobay\Requests_Pytest\TestResult\Allure\result --clean-alluredir
+#allure generate D:\Pycharm_workspace\Hobay\Requests_Pytest\TestResult\Allure\result -o D:\Pycharm_workspace\Hobay\Requests_Pytest\TestResult\Allure\html --clean

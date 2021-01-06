@@ -7,18 +7,17 @@
 import allure
 import pytest
 import jmespath
-import requests
 
 from Base.BaseCase import BaseCase
 from Base.GlobalEnvironment import GlobalEnvironment
 from tools.do_excel import DoExcel
-from tools.project_path import test_case_path
+from tools.project_path import test_data_path
 from tools.http_request import HttpRequest
 
 @pytest.mark.run(order=1)
 @allure.feature('注册接口')
 class TestRegister(BaseCase):
-    caseInfoList = DoExcel.getCaseDataFromExcel(test_case_path, "register")
+    caseInfoList = DoExcel.getCaseDataFromExcel(test_data_path, "register")
 
     @allure.story("注册新账号")
     @pytest.mark.usefixtures("del_file")

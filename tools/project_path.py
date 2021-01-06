@@ -11,7 +11,10 @@ import os
 project_path = os.path.split(os.path.split(os.path.realpath(__file__))[0])[0]
 
 # 测试用例的路径
-test_case_path = os.path.join(project_path, 'TestData', 'api_testcases_futureloan_v4.xlsx')
+test_case_path = os.path.join(project_path, 'TestCases')
+
+# 测试数据的路径
+test_data_path = os.path.join(project_path, 'TestData', 'api_testcases_futureloan_v4.xlsx')
 
 # 测试报告的路径
 test_report_path = os.path.join(project_path, 'TestResult', 'html_report', 'test_api.html')
@@ -31,11 +34,11 @@ log_path = os.path.join(project_path, 'TestResult', 'log')
 # 上传图片文件地址
 image_path = os.path.join(project_path, "Source", "picture.jpg")
 
-#allure_html报告保存地址
-allure_html = os.path.join(project_path, "TestResult", "Allure","html")
+# allure_html报告保存地址
+allure_html = os.path.join(project_path, "TestResult", "Allure", "html")
 
-#allure_result保存地址
-allure_result = os.path.join(project_path, "TestResult", "Allure","result")
+# allure_result保存地址
+allure_result = os.path.join(project_path, "TestResult", "Allure", "result")
 
 js = os.path.join(project_path, "Source", "des2.js")
 

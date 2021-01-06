@@ -7,18 +7,17 @@ import allure
 import pytest
 
 import jmespath
-import requests
 from Base.BaseCase import BaseCase
 from Base.GlobalEnvironment import GlobalEnvironment
 from tools.do_excel import DoExcel
 from tools.http_request import HttpRequest
-from tools.project_path import test_case_path
+from tools.project_path import test_data_path
 
 
 @pytest.mark.run(order=5)
 @allure.feature('添加项目接口')
 class TestAddLoan(BaseCase):
-    caseInfoList = DoExcel.getCaseDataFromExcel(test_case_path, "addLoan")
+    caseInfoList = DoExcel.getCaseDataFromExcel(test_data_path, "addLoan")
 
     @allure.story("测试添加项目接口")
     @pytest.mark.parametrize("case_info", caseInfoList)

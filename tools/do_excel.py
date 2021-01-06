@@ -74,5 +74,5 @@ class DoExcel:
 
 
 if __name__ == '__main__':
-    test_data = DoExcel.getCaseDataFromExcel(test_case_path, "register")
+    test_data = DoExcel.getCaseDataFromExcel(test_data_path, "register")
     print(test_data)

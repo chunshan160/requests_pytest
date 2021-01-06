@@ -11,12 +11,12 @@ class GetData:
     Cookie = None#存储cookie  初始值为None
     loan_id = None
     #iloc 替换ix   第一行不算 从第二行开始 第一格为[0,0]
-    NoRegTel=int(pd.read_excel(project_path.test_case_path,sheet_name='init').iloc[0,0])
+    NoRegTel=int(pd.read_excel(project_path.test_data_path,sheet_name='init').iloc[0,0])
 
-    normal_tel=int(pd.read_excel(project_path.test_case_path,sheet_name='init').iloc[1,0])
-    admin_tel=int(pd.read_excel(project_path.test_case_path,sheet_name='init').iloc[2,0])
-    loan_member_id = int(pd.read_excel(project_path.test_case_path, sheet_name='init').iloc[3, 0])
-    memberId=int(pd.read_excel(project_path.test_case_path, sheet_name='init').iloc[4, 0])
+    normal_tel=int(pd.read_excel(project_path.test_data_path,sheet_name='init').iloc[1,0])
+    admin_tel=int(pd.read_excel(project_path.test_data_path,sheet_name='init').iloc[2,0])
+    loan_member_id = int(pd.read_excel(project_path.test_data_path, sheet_name='init').iloc[3, 0])
+    memberId=int(pd.read_excel(project_path.test_data_path, sheet_name='init').iloc[4, 0])
 
 
 if __name__ == '__main__':

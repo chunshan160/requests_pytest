@@ -8,13 +8,13 @@ import pytest
 from Base.BaseCase import BaseCase
 from tools.do_excel import DoExcel
 from tools.http_request import HttpRequest
-from tools.project_path import test_case_path
+from tools.project_path import test_data_path
 
 
 @pytest.mark.run(order=6)
 @allure.feature('审核项目接口')
 class TestAuditLoan(BaseCase):
-    caseInfoList = DoExcel.getCaseDataFromExcel(test_case_path, "auditLoan")
+    caseInfoList = DoExcel.getCaseDataFromExcel(test_data_path, "auditLoan")
 
     @allure.story("测试审核项目接口")
     @pytest.mark.parametrize("case_info", caseInfoList)

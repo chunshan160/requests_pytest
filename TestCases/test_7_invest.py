@@ -9,13 +9,13 @@ import pytest
 from Base.BaseCase import BaseCase
 from tools.do_excel import DoExcel
 from tools.http_request import HttpRequest
-from tools.project_path import test_case_path
+from tools.project_path import test_data_path
 
 
 @pytest.mark.run(order=7)
 @allure.feature('投资接口')
 class TestInvest(BaseCase):
-    caseInfoList = DoExcel.getCaseDataFromExcel(test_case_path, "invest")
+    caseInfoList = DoExcel.getCaseDataFromExcel(test_data_path, "invest")
 
     @allure.story("测试投资接口")
     @pytest.mark.parametrize("case_info", caseInfoList)

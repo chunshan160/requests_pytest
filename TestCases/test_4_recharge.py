@@ -5,19 +5,18 @@
 # @File :test_4_recharge.py
 
 import pytest
-import requests
 import allure
 
 from Base.BaseCase import BaseCase
 from tools.do_excel import DoExcel
 from tools.http_request import HttpRequest
-from tools.project_path import test_case_path
+from tools.project_path import test_data_path
 
 
 @pytest.mark.run(order=4)
 @allure.feature('充值接口')
 class TestRecharge(BaseCase):
-    caseInfoList = DoExcel.getCaseDataFromExcel(test_case_path, "recharge")
+    caseInfoList = DoExcel.getCaseDataFromExcel(test_data_path, "recharge")
 
     @allure.story("测试充值接口")
     @pytest.mark.parametrize("case_info", caseInfoList)

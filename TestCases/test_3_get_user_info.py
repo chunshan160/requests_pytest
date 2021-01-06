@@ -10,13 +10,13 @@ import allure
 from Base.BaseCase import BaseCase
 from tools.do_excel import DoExcel
 from tools.http_request import HttpRequest
-from tools.project_path import test_case_path
+from tools.project_path import test_data_path
 
 
 @pytest.mark.run(order=3)
 @allure.feature('获取用户信息接口')
 class TestGetUserInfo(BaseCase):
-    caseInfoList = DoExcel.getCaseDataFromExcel(test_case_path, "getUserInfo")
+    caseInfoList = DoExcel.getCaseDataFromExcel(test_data_path, "getUserInfo")
 
     @allure.story("测试获取用户信息接口")
     @pytest.mark.parametrize("case_info", caseInfoList)

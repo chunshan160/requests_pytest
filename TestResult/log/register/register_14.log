@@ -1,0 +1,4 @@
+2021-01-06 10:53:12,373 - DEBUG - UserLog.py - 春衫 - 日志信息:请求头：{'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Content-Length': '108'}
+2021-01-06 10:53:12,376 - DEBUG - UserLog.py - 春衫 - 日志信息:请求正文：{'mobile_phone': '15815541766', 'pwd': 'lemon123456', 'type': '1', 'reg_name': '小柠檬mengmeng'}
+2021-01-06 10:53:12,381 - DEBUG - UserLog.py - 春衫 - 日志信息:响应头：{'Server': 'nginx/1.4.2', 'Date': 'Wed, 06 Jan 2021 02:53:08 GMT', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive'}
+2021-01-06 10:53:12,384 - DEBUG - UserLog.py - 春衫 - 日志信息:响应正文：{"code":2,"msg":"用户昵称长度超过10位","data":null,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}
