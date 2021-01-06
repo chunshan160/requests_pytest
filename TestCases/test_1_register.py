@@ -20,7 +20,7 @@ class TestRegister(BaseCase):
     caseInfoList = DoExcel.getCaseDataFromExcel(test_data_path, "register")
 
     @allure.story("注册新账号")
-    @pytest.mark.usefixtures("del_file")
+    # @pytest.mark.usefixtures("del_file")
     @pytest.mark.usefixtures("global_environment")
     @pytest.mark.parametrize("caseInfo", caseInfoList)  # 替代ddt
     def test_register(self, caseInfo):
