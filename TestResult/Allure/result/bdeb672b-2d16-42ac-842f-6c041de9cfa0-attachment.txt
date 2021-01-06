@@ -1,4 +1,0 @@
-DEBUG    春衫:UserLog.py:65 请求头：{'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEwMDIzNTc0LCJleHAiOjE2MDk4NDE4MTB9.zvyACW77lB4qapR68ZIN6dtqWq2J5I_zXyZ8RUAVTmtMXt6R99Ivr8TgHl-7QC-QLQKWt5kemCEQmONh9NKZpw', 'Content-Length': '23'}
-DEBUG    春衫:UserLog.py:65 请求正文：{'member_id': 10023574}
-DEBUG    春衫:UserLog.py:65 响应头：{'Server': 'nginx/1.4.2', 'Date': 'Tue, 05 Jan 2021 10:12:00 GMT', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive'}
-DEBUG    春衫:UserLog.py:65 响应正文：{"code":2,"msg":"余额必须为数值型","data":null,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}

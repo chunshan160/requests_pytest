@@ -9,8 +9,8 @@ import pytest
 from tools.project_path import allure_html, allure_result
 print(allure_html)
 print(allure_result)
-pytest.main(
-    ["-v", "-s", "--alluredir", allure_result, "--clean-alluredir"])
+# pytest.main(
+#     ["-v", "-s", "--alluredir", allure_result, "--clean-alluredir"])
 
 # 生成测试报告
 os.system(f"allure generate {allure_result} -o {allure_html} --clean")

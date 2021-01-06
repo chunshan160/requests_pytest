@@ -3,5 +3,5 @@ login: ["all"]
 getUserInfo: ["all"]
 recharge: ["all"]
 addLoan: ["all"]
-#business: "all"
-#invest: "all"
+auditLoan: ["all"]
+invest: ["all"]
