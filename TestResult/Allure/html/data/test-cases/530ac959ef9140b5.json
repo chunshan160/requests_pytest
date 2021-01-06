@@ -1,0 +1,185 @@
+{
+  "uid" : "530ac959ef9140b5",
+  "name" : "test_register[caseInfo11]",
+  "fullName" : "TestCases.test_1_register.TestRegister#test_register[caseInfo11]",
+  "historyId" : "c83bbb4ae80be766f9f18bfda9eee14d",
+  "time" : {
+    "start" : 1609841508879,
+    "stop" : 1609841509373,
+    "duration" : 494
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "del_file",
+    "time" : {
+      "start" : 1609841503467,
+      "stop" : 1609841503497,
+      "duration" : 30
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "global_environment",
+    "time" : {
+      "start" : 1609841503467,
+      "stop" : 1609841503467,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "读数据库获取没有注册过的手机号码",
+      "time" : {
+        "start" : 1609841508879,
+        "stop" : 1609841508879,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "对当前的case进行参数化替换",
+      "time" : {
+        "start" : 1609841508879,
+        "stop" : 1609841508879,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "发起请求",
+      "time" : {
+        "start" : 1609841508879,
+        "stop" : 1609841509372,
+        "duration" : 493
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "响应结果断言",
+      "time" : {
+        "start" : 1609841509372,
+        "stop" : 1609841509373,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "数据库断言",
+      "time" : {
+        "start" : 1609841509373,
+        "stop" : 1609841509373,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "d232d42374fc9f16",
+      "name" : "log",
+      "source" : "d232d42374fc9f16.txt",
+      "type" : "text/plain",
+      "size" : 832
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 5,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "注册新账号"
+  }, {
+    "name" : "feature",
+    "value" : "注册接口"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCases"
+  }, {
+    "name" : "suite",
+    "value" : "test_1_register"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestRegister"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-4EMDDAT"
+  }, {
+    "name" : "thread",
+    "value" : "12908-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCases.test_1_register"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "caseInfo",
+    "value" : "{'case_id': 12, 'interface': 'register', 'title': '密码为17位', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\"}', 'method': 'POST', 'url': '/member/register', 'input_params': '{\\n  \"mobile_phone\": \"15815541766\",\\n  \"pwd\": \"lemon123456789012\",\\n  \"type\":\"1\",\\n  \"reg_name\":\"mengmeng\"\\n}', 'expected': '{\\n  \"code\": 2,\\n  \"msg\": \"密码格式为8到16位\",\\n  \"data\": None\\n}', 'check_SQL': None, 'sheet_name': 'register'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "530ac959ef9140b5.json",
+  "parameterValues" : [ "{'case_id': 12, 'interface': 'register', 'title': '密码为17位', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\"}', 'method': 'POST', 'url': '/member/register', 'input_params': '{\\n  \"mobile_phone\": \"15815541766\",\\n  \"pwd\": \"lemon123456789012\",\\n  \"type\":\"1\",\\n  \"reg_name\":\"mengmeng\"\\n}', 'expected': '{\\n  \"code\": 2,\\n  \"msg\": \"密码格式为8到16位\",\\n  \"data\": None\\n}', 'check_SQL': None, 'sheet_name': 'register'}" ]
+}

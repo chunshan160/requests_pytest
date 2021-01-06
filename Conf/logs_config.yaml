@@ -1,0 +1,3 @@
+logger_collect_level: "DEBUG"
+logger_print_level: "DEBUG"
+logger_output_level: "DEBUG"

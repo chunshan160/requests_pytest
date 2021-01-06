@@ -1,0 +1,4 @@
+DEBUG    春衫:UserLog.py:65 请求头：{'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Content-Length': '96'}
+DEBUG    春衫:UserLog.py:65 请求正文：{'mobile_phone': '15815541766', 'pwd': 'lemon123456789012', 'type': '1', 'reg_name': 'mengmeng'}
+DEBUG    春衫:UserLog.py:65 响应头：{'Server': 'nginx/1.4.2', 'Date': 'Tue, 05 Jan 2021 10:11:48 GMT', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive'}
+DEBUG    春衫:UserLog.py:65 响应正文：{"code":2,"msg":"密码格式为8到16位","data":null,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}

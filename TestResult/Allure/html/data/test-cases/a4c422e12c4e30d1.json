@@ -1,0 +1,125 @@
+{
+  "uid" : "a4c422e12c4e30d1",
+  "name" : "test_add_loan[case_info24]",
+  "fullName" : "TestCases.test_5_add_loan.TestAddLoan#test_add_loan[case_info24]",
+  "historyId" : "e8d489228cadad59e97d93f12f9a57cf",
+  "time" : {
+    "start" : 1609841537555,
+    "stop" : 1609841538065,
+    "duration" : 510
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "对当前的case进行参数化替换",
+      "time" : {
+        "start" : 1609841537555,
+        "stop" : 1609841537555,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "发起请求",
+      "time" : {
+        "start" : 1609841537555,
+        "stop" : 1609841538065,
+        "duration" : 510
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "响应结果断言",
+      "time" : {
+        "start" : 1609841538065,
+        "stop" : 1609841538065,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "2f62cd751f92daff",
+      "name" : "log",
+      "source" : "2f62cd751f92daff.txt",
+      "type" : "text/plain",
+      "size" : 1084
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 3,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "添加项目接口"
+  }, {
+    "name" : "story",
+    "value" : "测试添加项目接口"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCases"
+  }, {
+    "name" : "suite",
+    "value" : "test_5_add_loan"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestAddLoan"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-4EMDDAT"
+  }, {
+    "name" : "thread",
+    "value" : "12908-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCases.test_5_add_loan"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_info",
+    "value" : "{'case_id': 25, 'interface': 'addLoan', 'title': '竞标天数输入0天', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\",\"Authorization\":\"Bearer {{token3}}\"}', 'method': 'POST', 'url': '/loan/add', 'input_params': '{\\n    \"member_id\":{{member_id3}},\\n    \"title\":\"购买全栈测试课程_5\",\\n    \"amount\":1000.00,\\n    \"loan_rate\":23.0,\\n    \"loan_term\":\"3\",\\n    \"loan_date_type\":\"1\",\\n    \"bidding_days\":\"0\"\\n}', 'expected': '{\\n  \"code\": 2,\\n  \"msg\": \"竞标期限为1-10天\"\\n}', 'check_SQL': None, 'sheet_name': 'addLoan'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a4c422e12c4e30d1.json",
+  "parameterValues" : [ "{'case_id': 25, 'interface': 'addLoan', 'title': '竞标天数输入0天', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\",\"Authorization\":\"Bearer {{token3}}\"}', 'method': 'POST', 'url': '/loan/add', 'input_params': '{\\n    \"member_id\":{{member_id3}},\\n    \"title\":\"购买全栈测试课程_5\",\\n    \"amount\":1000.00,\\n    \"loan_rate\":23.0,\\n    \"loan_term\":\"3\",\\n    \"loan_date_type\":\"1\",\\n    \"bidding_days\":\"0\"\\n}', 'expected': '{\\n  \"code\": 2,\\n  \"msg\": \"竞标期限为1-10天\"\\n}', 'check_SQL': None, 'sheet_name': 'addLoan'}" ]
+}

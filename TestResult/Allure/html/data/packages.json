@@ -1,0 +1,889 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "TestCases",
+    "children" : [ {
+      "name" : "test_1_register",
+      "children" : [ {
+        "name" : "test_register[caseInfo0]",
+        "uid" : "d35de575444f7e97",
+        "parentUid" : "b300f384c11da0161240bd0aaba73723",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841503500,
+          "stop" : 1609841503912,
+          "duration" : 412
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 1, 'interface': 'register', 'title': '正常注册-管理员，昵称10位', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\"}', 'method': 'POST', 'url': '/member/register', 'input_params': '{\\n  \"mobile_phone\": \"{{mobile_phone1}}\",\\n  \"pwd\": \"lemon123456\",\\n  \"type\":\"0\",\\n  \"reg_name\":\"管理员用户lemon\"\\n}', 'expected': '{\\n  \"code\": 0,\\n  \"msg\": \"OK\",\\n  \"data.mobile_phone\": \"{{mobile_phone1}}\"\\n}', 'check_SQL': '{\"select count(*) from member where mobile_phone={{mobile_phone1}}\":1,\\n\"select reg_name from member where mobile_phone={{mobile_phone1}}\":\"管理员用户lemon\"}', 'sheet_name': 'register'}" ]
+      }, {
+        "name" : "test_register[caseInfo1]",
+        "uid" : "4184353b05907911",
+        "parentUid" : "b300f384c11da0161240bd0aaba73723",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841503921,
+          "stop" : 1609841504330,
+          "duration" : 409
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 2, 'interface': 'register', 'title': '正常注册-普通用户，type为空，密码8位（投资人）', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\"}', 'method': 'POST', 'url': '/member/register', 'input_params': '{\\n  \"mobile_phone\": \"{{mobile_phone2}}\",\\n  \"pwd\": \"lemon666\",\\n  \"type\":\"\",\\n  \"reg_name\":\"tudou\"\\n}', 'expected': '{\\n  \"code\": 0,\\n  \"msg\": \"OK\",\\n  \"data.mobile_phone\": \"{{mobile_phone2}}\"\\n}', 'check_SQL': '{\"select count(*) from member where mobile_phone={{mobile_phone2}}\":1}', 'sheet_name': 'register'}" ]
+      }, {
+        "name" : "test_register[caseInfo2]",
+        "uid" : "2376fe088f7b8ce7",
+        "parentUid" : "b300f384c11da0161240bd0aaba73723",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841504338,
+          "stop" : 1609841504844,
+          "duration" : 506
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 3, 'interface': 'register', 'title': '正常注册-普通用户，昵称为空，密码16位（借款人）', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\"}', 'method': 'POST', 'url': '/member/register', 'input_params': '{\\n  \"mobile_phone\": \"{{mobile_phone3}}\",\\n  \"pwd\": \"lemon12345678901\",\\n  \"type\":\"1\",\\n  \"reg_name\":\"\"\\n}', 'expected': '{\\n  \"code\": 0,\\n  \"msg\": \"OK\",\\n  \"data.mobile_phone\": \"{{mobile_phone3}}\"\\n}', 'check_SQL': '{\"select count(*) from member where mobile_phone={{mobile_phone3}}\":1}', 'sheet_name': 'register'}" ]
+      }, {
+        "name" : "test_register[caseInfo3]",
+        "uid" : "3cbbcb6d3119c6ef",
+        "parentUid" : "b300f384c11da0161240bd0aaba73723",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841504853,
+          "stop" : 1609841505285,
+          "duration" : 432
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 4, 'interface': 'register', 'title': '手机号为空', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\"}', 'method': 'POST', 'url': '/member/register', 'input_params': '{\\n  \"mobile_phone\": \"\",\\n  \"pwd\": \"lemon123456\",\\n  \"type\":\"1\",\\n  \"reg_name\":\"mengmeng\"\\n}', 'expected': '{\\n  \"code\": 1,\\n  \"msg\": \"手机号为空\",\\n  \"data\": None\\n}', 'check_SQL': None, 'sheet_name': 'register'}" ]
+      }, {
+        "name" : "test_register[caseInfo4]",
+        "uid" : "3e60cf66223b3e0a",
+        "parentUid" : "b300f384c11da0161240bd0aaba73723",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841505335,
+          "stop" : 1609841505794,
+          "duration" : 459
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 5, 'interface': 'register', 'title': '手机号为10位', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\"}', 'method': 'POST', 'url': '/member/register', 'input_params': '{\\n  \"mobile_phone\": \"1581554176\",\\n  \"pwd\": \"lemon123456\",\\n  \"type\":\"1\",\\n  \"reg_name\":\"mengmeng\"\\n}', 'expected': '{\\n  \"code\": 2,\\n  \"msg\": \"无效的手机格式\",\\n  \"data\": None\\n}', 'check_SQL': None, 'sheet_name': 'register'}" ]
+      }, {
+        "name" : "test_register[caseInfo5]",
+        "uid" : "bfb6b1f8aa22cd7b",
+        "parentUid" : "b300f384c11da0161240bd0aaba73723",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841505803,
+          "stop" : 1609841506350,
+          "duration" : 547
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 6, 'interface': 'register', 'title': '手机号为12位', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\"}', 'method': 'POST', 'url': '/member/register', 'input_params': '{\\n  \"mobile_phone\": \"158155417633\",\\n  \"pwd\": \"lemon123456\",\\n  \"type\":\"1\",\\n  \"reg_name\":\"mengmeng\"\\n}', 'expected': '{\\n  \"code\": 2,\\n  \"msg\": \"无效的手机格式\",\\n  \"data\": None\\n}', 'check_SQL': None, 'sheet_name': 'register'}" ]
+      }, {
+        "name" : "test_register[caseInfo6]",
+        "uid" : "2c0ac9d78674c1c9",
+        "parentUid" : "b300f384c11da0161240bd0aaba73723",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841506358,
+          "stop" : 1609841506850,
+          "duration" : 492
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 7, 'interface': 'register', 'title': '手机号包含非数字', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\"}', 'method': 'POST', 'url': '/member/register', 'input_params': '{\\n  \"mobile_phone\": \"1581554176a\",\\n  \"pwd\": \"lemon123456\",\\n  \"type\":\"1\",\\n  \"reg_name\":\"mengmeng\"\\n}', 'expected': '{\\n  \"code\": 2,\\n  \"msg\": \"无效的手机格式\",\\n  \"data\": None\\n}', 'check_SQL': None, 'sheet_name': 'register'}" ]
+      }, {
+        "name" : "test_register[caseInfo7]",
+        "uid" : "a5cf1bb0265f55eb",
+        "parentUid" : "b300f384c11da0161240bd0aaba73723",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841506859,
+          "stop" : 1609841507350,
+          "duration" : 491
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 8, 'interface': 'register', 'title': '手机号为不存在的号段', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\"}', 'method': 'POST', 'url': '/member/register', 'input_params': '{\\n  \"mobile_phone\": \"11015541763\",\\n  \"pwd\": \"lemon123456\",\\n  \"type\":\"1\",\\n  \"reg_name\":\"mengmeng\"\\n}', 'expected': '{\\n  \"code\": 2,\\n  \"msg\": \"无效的手机格式\",\\n  \"data\": None\\n}', 'check_SQL': None, 'sheet_name': 'register'}" ]
+      }, {
+        "name" : "test_register[caseInfo8]",
+        "uid" : "e91ed168b8cf0b05",
+        "parentUid" : "b300f384c11da0161240bd0aaba73723",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841507384,
+          "stop" : 1609841507849,
+          "duration" : 465
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 9, 'interface': 'register', 'title': '手机号输入已注册号码', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\"}', 'method': 'POST', 'url': '/member/register', 'input_params': '{\\n  \"mobile_phone\": \"15815541764\",\\n  \"pwd\": \"lemon123456\",\\n  \"type\":\"1\",\\n  \"reg_name\":\"mengmeng\"\\n}', 'expected': '{\\n  \"code\": 2,\\n  \"msg\": \"账号已存在\",\\n  \"data\": None\\n}', 'check_SQL': None, 'sheet_name': 'register'}" ]
+      }, {
+        "name" : "test_register[caseInfo9]",
+        "uid" : "f72ac91945b1f077",
+        "parentUid" : "b300f384c11da0161240bd0aaba73723",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841507859,
+          "stop" : 1609841508359,
+          "duration" : 500
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 10, 'interface': 'register', 'title': '密码为空', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\"}', 'method': 'POST', 'url': '/member/register', 'input_params': '{\\n  \"mobile_phone\": \"15815541766\",\\n  \"pwd\": \"\",\\n  \"type\":\"1\",\\n  \"reg_name\":\"mengmeng\"\\n}', 'expected': '{\\n  \"code\": 1,\\n  \"msg\": \"密码为空\",\\n  \"data\": None\\n}', 'check_SQL': None, 'sheet_name': 'register'}" ]
+      }, {
+        "name" : "test_register[caseInfo10]",
+        "uid" : "4a629b19fcb35e6",
+        "parentUid" : "b300f384c11da0161240bd0aaba73723",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841508369,
+          "stop" : 1609841508869,
+          "duration" : 500
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 11, 'interface': 'register', 'title': '密码为7位', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\"}', 'method': 'POST', 'url': '/member/register', 'input_params': '{\\n  \"mobile_phone\": \"15815541766\",\\n  \"pwd\": \"lemon66\",\\n  \"type\":\"1\",\\n  \"reg_name\":\"mengmeng\"\\n}', 'expected': '{\\n  \"code\": 2,\\n  \"msg\": \"密码格式为8到16位\",\\n  \"data\": None\\n}', 'check_SQL': None, 'sheet_name': 'register'}" ]
+      }, {
+        "name" : "test_register[caseInfo11]",
+        "uid" : "530ac959ef9140b5",
+        "parentUid" : "b300f384c11da0161240bd0aaba73723",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841508879,
+          "stop" : 1609841509373,
+          "duration" : 494
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 12, 'interface': 'register', 'title': '密码为17位', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\"}', 'method': 'POST', 'url': '/member/register', 'input_params': '{\\n  \"mobile_phone\": \"15815541766\",\\n  \"pwd\": \"lemon123456789012\",\\n  \"type\":\"1\",\\n  \"reg_name\":\"mengmeng\"\\n}', 'expected': '{\\n  \"code\": 2,\\n  \"msg\": \"密码格式为8到16位\",\\n  \"data\": None\\n}', 'check_SQL': None, 'sheet_name': 'register'}" ]
+      }, {
+        "name" : "test_register[caseInfo12]",
+        "uid" : "2d18367aa12a0fea",
+        "parentUid" : "b300f384c11da0161240bd0aaba73723",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841509381,
+          "stop" : 1609841509903,
+          "duration" : 522
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 13, 'interface': 'register', 'title': 'type输入非0、1', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\"}', 'method': 'POST', 'url': '/member/register', 'input_params': '{\\n  \"mobile_phone\": \"15815541766\",\\n  \"pwd\": \"lemon123456\",\\n  \"type\":\"3\",\\n  \"reg_name\":\"mengmeng\"\\n}', 'expected': '{\\n  \"code\": 2,\\n  \"msg\": \"不支持的用户类型\",\\n  \"data\": None\\n}', 'check_SQL': None, 'sheet_name': 'register'}" ]
+      }, {
+        "name" : "test_register[caseInfo13]",
+        "uid" : "2176ebe7494e37ba",
+        "parentUid" : "b300f384c11da0161240bd0aaba73723",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841509911,
+          "stop" : 1609841510405,
+          "duration" : 494
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 14, 'interface': 'register', 'title': '昵称超出10位', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\"}', 'method': 'POST', 'url': '/member/register', 'input_params': '{\\n  \"mobile_phone\": \"15815541766\",\\n  \"pwd\": \"lemon123456\",\\n  \"type\":\"1\",\\n  \"reg_name\":\"小柠檬mengmeng\"\\n}', 'expected': '{\\n  \"code\": 2,\\n  \"msg\": \"用户昵称长度超过10位\",\\n  \"data\": None\\n}', 'check_SQL': None, 'sheet_name': 'register'}" ]
+      } ],
+      "uid" : "b300f384c11da0161240bd0aaba73723"
+    }, {
+      "name" : "test_2_login",
+      "children" : [ {
+        "name" : "test_login[case_info0]",
+        "uid" : "9f374a81c4677538",
+        "parentUid" : "cd3786f6c28f25b7e7ed05c130cc9019",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841510443,
+          "stop" : 1609841510909,
+          "duration" : 466
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 1, 'interface': 'login', 'title': '正常登录-管理员', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\"}', 'method': 'POST', 'url': '/member/login', 'input_params': '{\\n  \"mobile_phone\": \"{{mobile_phone1}}\",\\n  \"pwd\": \"{{pwd1}}\"\\n}', 'expected': '{\\n    \"code\": 0,\\n    \"msg\": \"OK\",\\n    \"data.mobile_phone\": \"{{mobile_phone1}}\"\\n}', 'check_SQL': None, 'sheet_name': 'login'}" ]
+      }, {
+        "name" : "test_login[case_info1]",
+        "uid" : "3b7d03ac3e399cbf",
+        "parentUid" : "cd3786f6c28f25b7e7ed05c130cc9019",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841510917,
+          "stop" : 1609841511406,
+          "duration" : 489
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 2, 'interface': 'login', 'title': '正常登录-投资人', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\"}', 'method': 'POST', 'url': '/member/login', 'input_params': '{\\n  \"mobile_phone\": \"{{mobile_phone2}}\",\\n  \"pwd\": \"{{pwd2}}\"\\n}', 'expected': '{\\n    \"code\": 0,\\n    \"msg\": \"OK\",\\n    \"data.mobile_phone\": \"{{mobile_phone2}}\"\\n}', 'check_SQL': None, 'sheet_name': 'login'}" ]
+      }, {
+        "name" : "test_login[case_info2]",
+        "uid" : "1095a1bd8e529acd",
+        "parentUid" : "cd3786f6c28f25b7e7ed05c130cc9019",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841511415,
+          "stop" : 1609841511911,
+          "duration" : 496
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 3, 'interface': 'login', 'title': '正常登录-借款人', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\"}', 'method': 'POST', 'url': '/member/login', 'input_params': '{\\n  \"mobile_phone\": \"{{mobile_phone3}}\",\\n  \"pwd\": \"{{pwd3}}\"\\n}', 'expected': '{\\n    \"code\": 0,\\n    \"msg\": \"OK\",\\n    \"data.mobile_phone\": \"{{mobile_phone3}}\"\\n}', 'check_SQL': None, 'sheet_name': 'login'}" ]
+      }, {
+        "name" : "test_login[case_info3]",
+        "uid" : "a4a515a08d1cd8ae",
+        "parentUid" : "cd3786f6c28f25b7e7ed05c130cc9019",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841511918,
+          "stop" : 1609841512413,
+          "duration" : 495
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 4, 'interface': 'login', 'title': '手机号为空', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\"}', 'method': 'POST', 'url': '/member/login', 'input_params': '{\\n  \"mobile_phone\": \"\",\\n  \"pwd\": \"lemon666\"\\n}', 'expected': '{\\n  \"code\": 1,\\n  \"msg\": \"手机号码为空\"\\n}', 'check_SQL': None, 'sheet_name': 'login'}" ]
+      }, {
+        "name" : "test_login[case_info4]",
+        "uid" : "7710148466b6928",
+        "parentUid" : "cd3786f6c28f25b7e7ed05c130cc9019",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841512422,
+          "stop" : 1609841512909,
+          "duration" : 487
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 5, 'interface': 'login', 'title': '手机号为10位', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\"}', 'method': 'POST', 'url': '/member/login', 'input_params': '{\\n  \"mobile_phone\": \"1581554176\",\\n  \"pwd\": \"lemon666\",\\n  \"type\":\"1\",\\n  \"reg_name\":\"mengmeng\"\\n}', 'expected': '{\\n  \"code\": 2,\\n  \"msg\": \"无效的手机格式\"\\n}', 'check_SQL': None, 'sheet_name': 'login'}" ]
+      }, {
+        "name" : "test_login[case_info5]",
+        "uid" : "410ce22c015f61a0",
+        "parentUid" : "cd3786f6c28f25b7e7ed05c130cc9019",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841512917,
+          "stop" : 1609841513410,
+          "duration" : 493
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 6, 'interface': 'login', 'title': '手机号为12位', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\"}', 'method': 'POST', 'url': '/member/login', 'input_params': '{\\n  \"mobile_phone\": \"158155417643\",\\n  \"pwd\": \"lemon666\"\\n}', 'expected': '{\\n  \"code\": 2,\\n  \"msg\": \"无效的手机格式\"\\n}', 'check_SQL': None, 'sheet_name': 'login'}" ]
+      }, {
+        "name" : "test_login[case_info6]",
+        "uid" : "7ccddcfd8b838b21",
+        "parentUid" : "cd3786f6c28f25b7e7ed05c130cc9019",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841513420,
+          "stop" : 1609841513911,
+          "duration" : 491
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 7, 'interface': 'login', 'title': '手机号包含非数字', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\"}', 'method': 'POST', 'url': '/member/login', 'input_params': '{\\n  \"mobile_phone\": \"1581554176a\",\\n  \"pwd\": \"lemon666\"\\n}', 'expected': '{\\n  \"code\": 2,\\n  \"msg\": \"无效的手机格式\"\\n}', 'check_SQL': None, 'sheet_name': 'login'}" ]
+      }, {
+        "name" : "test_login[case_info7]",
+        "uid" : "ff216ff5d1367ed1",
+        "parentUid" : "cd3786f6c28f25b7e7ed05c130cc9019",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841513922,
+          "stop" : 1609841514412,
+          "duration" : 490
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 8, 'interface': 'login', 'title': '不存在的号段', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\"}', 'method': 'POST', 'url': '/member/login', 'input_params': '{\\n  \"mobile_phone\": \"11015541764\",\\n  \"pwd\": \"lemon666\"\\n}', 'expected': '{\\n  \"code\": 2,\\n  \"msg\": \"无效的手机格式\"\\n}', 'check_SQL': None, 'sheet_name': 'login'}" ]
+      }, {
+        "name" : "test_login[case_info8]",
+        "uid" : "cb7ebe4400d887d3",
+        "parentUid" : "cd3786f6c28f25b7e7ed05c130cc9019",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841514421,
+          "stop" : 1609841514914,
+          "duration" : 493
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 9, 'interface': 'login', 'title': '输入未注册的手机号', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\"}', 'method': 'POST', 'url': '/member/login', 'input_params': '{\\n  \"mobile_phone\": \"13323231200\",\\n  \"pwd\": \"lemon666\"\\n}', 'expected': '{\\n  \"code\": 1001,\\n  \"msg\": \"账号信息错误\"\\n}', 'check_SQL': None, 'sheet_name': 'login'}" ]
+      }, {
+        "name" : "test_login[case_info9]",
+        "uid" : "1ec90f83efb5b1bd",
+        "parentUid" : "cd3786f6c28f25b7e7ed05c130cc9019",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841514922,
+          "stop" : 1609841515415,
+          "duration" : 493
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 10, 'interface': 'login', 'title': '密码为空', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\"}', 'method': 'POST', 'url': '/member/login', 'input_params': '{\\n  \"mobile_phone\": \"15815541764\",\\n  \"pwd\": \"\"\\n}', 'expected': '{\\n  \"code\": 1,\\n  \"msg\": \"密码为空\"\\n}', 'check_SQL': None, 'sheet_name': 'login'}" ]
+      }, {
+        "name" : "test_login[case_info10]",
+        "uid" : "75732a3b1db484e9",
+        "parentUid" : "cd3786f6c28f25b7e7ed05c130cc9019",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841515423,
+          "stop" : 1609841515914,
+          "duration" : 491
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 11, 'interface': 'login', 'title': '密码为7位', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\"}', 'method': 'POST', 'url': '/member/login', 'input_params': '{\\n  \"mobile_phone\": \"1515815541764\",\\n  \"pwd\": \"lemon66\"\\n}', 'expected': '{\\n  \"code\": 2,\\n  \"msg\": \"无效的手机格式\"\\n}', 'check_SQL': None, 'sheet_name': 'login'}" ]
+      }, {
+        "name" : "test_login[case_info11]",
+        "uid" : "806db28331f98e8b",
+        "parentUid" : "cd3786f6c28f25b7e7ed05c130cc9019",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841515926,
+          "stop" : 1609841516416,
+          "duration" : 490
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 12, 'interface': 'login', 'title': '密码为17位', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\"}', 'method': 'POST', 'url': '/member/login', 'input_params': '{\\n  \"mobile_phone\": \"15815541764\",\\n  \"pwd\": \"lemon123456789012\"\\n}', 'expected': '{\\n  \"code\": 1001,\\n  \"msg\": \"账号信息错误\"\\n}', 'check_SQL': None, 'sheet_name': 'login'}" ]
+      }, {
+        "name" : "test_login[case_info12]",
+        "uid" : "f39144cf4936e03b",
+        "parentUid" : "cd3786f6c28f25b7e7ed05c130cc9019",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841516426,
+          "stop" : 1609841516916,
+          "duration" : 490
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 13, 'interface': 'login', 'title': '密码错误-不区分大小写', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\"}', 'method': 'POST', 'url': '/member/login', 'input_params': '{\\n  \"mobile_phone\": \"15815541764\",\\n  \"pwd\": \"LEMON666\"\\n}', 'expected': '{\\n  \"code\": 1001,\\n  \"msg\": \"账号信息错误\"\\n}', 'check_SQL': None, 'sheet_name': 'login'}" ]
+      }, {
+        "name" : "test_login[case_info13]",
+        "uid" : "55fefb0e388c7571",
+        "parentUid" : "cd3786f6c28f25b7e7ed05c130cc9019",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841516924,
+          "stop" : 1609841517437,
+          "duration" : 513
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 14, 'interface': 'login', 'title': '密码错误-过长', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\"}', 'method': 'POST', 'url': '/member/login', 'input_params': '{\\n  \"mobile_phone\": \"15815541763\",\\n  \"pwd\": \"lemon1234567\"\\n}', 'expected': '{\\n  \"code\": 1001,\\n  \"msg\": \"账号信息错误\"\\n}', 'check_SQL': None, 'sheet_name': 'login'}" ]
+      }, {
+        "name" : "test_login[case_info14]",
+        "uid" : "5a5f715a8e430571",
+        "parentUid" : "cd3786f6c28f25b7e7ed05c130cc9019",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841517463,
+          "stop" : 1609841517978,
+          "duration" : 515
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 15, 'interface': 'login', 'title': '密码错误-过短', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\"}', 'method': 'POST', 'url': '/member/login', 'input_params': '{\\n  \"mobile_phone\": \"15815541763\",\\n  \"pwd\": \"lemon12345\"\\n}', 'expected': '{\\n  \"code\": 1001,\\n  \"msg\": \"账号信息错误\"\\n}', 'check_SQL': None, 'sheet_name': 'login'}" ]
+      } ],
+      "uid" : "cd3786f6c28f25b7e7ed05c130cc9019"
+    }, {
+      "name" : "test_3_get_user_info",
+      "children" : [ {
+        "name" : "test_get_user_info[case_info0]",
+        "uid" : "b41a88b5a130ae5b",
+        "parentUid" : "80ca30614487f301f92c2970ba0527bf",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841517978,
+          "stop" : 1609841518488,
+          "duration" : 510
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 1, 'interface': 'getUserInfo', 'title': '正常获取用户信息-管理员', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\",\"Authorization\":\"Bearer {{token1}}\"}', 'method': 'GET', 'url': '/member/{{member_id1}}/info', 'input_params': None, 'expected': '{\\n    \"code\": 0,\\n    \"msg\": \"OK\",\\n    \"data.id\": {{member_id1}},\\n\"data.mobile_phone\": \"{{mobile_phone1}}\"\\n}', 'check_SQL': None, 'sheet_name': 'getUserInfo'}" ]
+      }, {
+        "name" : "test_get_user_info[case_info1]",
+        "uid" : "d2408ac37f318e93",
+        "parentUid" : "80ca30614487f301f92c2970ba0527bf",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841518498,
+          "stop" : 1609841518998,
+          "duration" : 500
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 2, 'interface': 'getUserInfo', 'title': '正常获取用户信息-投资人', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\",\"Authorization\":\"Bearer {{token2}}\"}', 'method': 'GET', 'url': '/member/{{member_id2}}/info', 'input_params': None, 'expected': '{\\n    \"code\": 0,\\n    \"msg\": \"OK\",\\n    \"data.id\": {{member_id2}},\\n\"data.mobile_phone\": \"{{mobile_phone2}}\"\\n}', 'check_SQL': None, 'sheet_name': 'getUserInfo'}" ]
+      }, {
+        "name" : "test_get_user_info[case_info2]",
+        "uid" : "6cd96fd500a09a82",
+        "parentUid" : "80ca30614487f301f92c2970ba0527bf",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841519008,
+          "stop" : 1609841519518,
+          "duration" : 510
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 3, 'interface': 'getUserInfo', 'title': '正常获取用户信息-借款人', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\",\"Authorization\":\"Bearer {{token3}}\"}', 'method': 'GET', 'url': '/member/{{member_id3}}/info', 'input_params': None, 'expected': '{\\n    \"code\": 0,\\n    \"msg\": \"OK\",\\n    \"data.id\": {{member_id3}},\\n\"data.mobile_phone\": \"{{mobile_phone3}}\"\\n}', 'check_SQL': None, 'sheet_name': 'getUserInfo'}" ]
+      } ],
+      "uid" : "80ca30614487f301f92c2970ba0527bf"
+    }, {
+      "name" : "test_4_recharge",
+      "children" : [ {
+        "name" : "test_recharge[case_info0]",
+        "uid" : "c774cd1cc043bbb3",
+        "parentUid" : "a462f02ce58254f466df03f42809e7ab",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841519528,
+          "stop" : 1609841520258,
+          "duration" : 730
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 1, 'interface': 'recharge', 'title': '正常充值-金额0.01', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\",\"Authorization\":\"Bearer {{token2}}\"}', 'method': 'POST', 'url': '/member/recharge', 'input_params': '{\\n  \"member_id\": {{member_id2}},\\n  \"amount\": 0.01\\n}', 'expected': '{\\n    \"code\": 0,\\n    \"msg\": \"OK\",\\n    \"data.leave_amount\": 0.01\\n}', 'check_SQL': '{\"select leave_amount from member where id={{member_id2}};\":0.01,\\n\"select count(*) from financelog where income_member_id={{member_id2}};\":1}', 'sheet_name': 'recharge'}" ]
+      }, {
+        "name" : "test_recharge[case_info1]",
+        "uid" : "d5cd1b9b60f0b38",
+        "parentUid" : "a462f02ce58254f466df03f42809e7ab",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841520258,
+          "stop" : 1609841520628,
+          "duration" : 370
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 2, 'interface': 'recharge', 'title': '正常充值-金额500000', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\",\"Authorization\":\"Bearer {{token2}}\"}', 'method': 'POST', 'url': '/member/recharge', 'input_params': '{\\n  \"member_id\": {{member_id2}},\\n  \"amount\": 500000.00\\n}', 'expected': '{\\n    \"code\": 0,\\n    \"msg\": \"OK\",\\n    \"data.leave_amount\": 500000.01\\n}', 'check_SQL': None, 'sheet_name': 'recharge'}" ]
+      }, {
+        "name" : "test_recharge[case_info2]",
+        "uid" : "19bba7b093ec3da6",
+        "parentUid" : "a462f02ce58254f466df03f42809e7ab",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841520638,
+          "stop" : 1609841521095,
+          "duration" : 457
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 3, 'interface': 'recharge', 'title': '用户id为空', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\",\"Authorization\":\"Bearer {{token2}}\"}', 'method': 'POST', 'url': '/member/recharge', 'input_params': '{\\n  \"amount\": 10000.00\\n}', 'expected': '{\\n  \"code\": 1,\\n  \"msg\": \"用户id为空\"\\n}', 'check_SQL': None, 'sheet_name': 'recharge'}" ]
+      }, {
+        "name" : "test_recharge[case_info3]",
+        "uid" : "8fdecb28d71ee961",
+        "parentUid" : "a462f02ce58254f466df03f42809e7ab",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841521104,
+          "stop" : 1609841521199,
+          "duration" : 95
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 4, 'interface': 'recharge', 'title': '用户id不存在', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\",\"Authorization\":\"Bearer {{token2}}\"}', 'method': 'POST', 'url': '/member/recharge', 'input_params': '{\\n  \"member_id\": 888,\\n  \"amount\": 10000.00\\n}', 'expected': '{\\n  \"code\": 1007,\\n  \"msg\": \"无权限访问，请检查参数\"\\n}', 'check_SQL': None, 'sheet_name': 'recharge'}" ]
+      }, {
+        "name" : "test_recharge[case_info4]",
+        "uid" : "60cbee749bf26ca9",
+        "parentUid" : "a462f02ce58254f466df03f42809e7ab",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841521209,
+          "stop" : 1609841521738,
+          "duration" : 529
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 5, 'interface': 'recharge', 'title': '充值金额为空', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\",\"Authorization\":\"Bearer {{token2}}\"}', 'method': 'POST', 'url': '/member/recharge', 'input_params': '{\\n  \"member_id\": {{member_id2}}\\n}', 'expected': '{\\n  \"code\": 2,\\n  \"msg\": \"余额必须为数值型\"\\n}', 'check_SQL': None, 'sheet_name': 'recharge'}" ]
+      }, {
+        "name" : "test_recharge[case_info5]",
+        "uid" : "ef8bc0464fff6fe",
+        "parentUid" : "a462f02ce58254f466df03f42809e7ab",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841521748,
+          "stop" : 1609841522248,
+          "duration" : 500
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 6, 'interface': 'recharge', 'title': '充值金额输入0', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\",\"Authorization\":\"Bearer {{token2}}\"}', 'method': 'POST', 'url': '/member/recharge', 'input_params': '{\\n  \"member_id\": {{member_id2}},\\n  \"amount\": 0.00\\n}', 'expected': '{\\n    \"code\": 0,\\n    \"msg\": \"OK\",\\n    \"data.leave_amount\": 500000.01\\n}', 'check_SQL': None, 'sheet_name': 'recharge'}" ]
+      }, {
+        "name" : "test_recharge[case_info6]",
+        "uid" : "b92f8f3eaae76db1",
+        "parentUid" : "a462f02ce58254f466df03f42809e7ab",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841522258,
+          "stop" : 1609841522758,
+          "duration" : 500
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 7, 'interface': 'recharge', 'title': '充值金额输入负数', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\",\"Authorization\":\"Bearer {{token2}}\"}', 'method': 'POST', 'url': '/member/recharge', 'input_params': '{\\n  \"member_id\": {{member_id2}},\\n  \"amount\": -100.00\\n}', 'expected': '{\\n  \"code\": 2,\\n  \"msg\": \"余额必须大于0并且小于或者等于500000\"\\n}', 'check_SQL': None, 'sheet_name': 'recharge'}" ]
+      }, {
+        "name" : "test_recharge[case_info7]",
+        "uid" : "ff5cda8f55de6337",
+        "parentUid" : "a462f02ce58254f466df03f42809e7ab",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841522768,
+          "stop" : 1609841523268,
+          "duration" : 500
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 8, 'interface': 'recharge', 'title': '充值金额输入超出50w', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\",\"Authorization\":\"Bearer {{token2}}\"}', 'method': 'POST', 'url': '/member/recharge', 'input_params': '{\\n  \"member_id\": {{member_id2}},\\n  \"amount\": 500000.01\\n}', 'expected': '{\\n  \"code\": 2,\\n  \"msg\": \"余额必须大于0并且小于或者等于500000\"\\n}', 'check_SQL': None, 'sheet_name': 'recharge'}" ]
+      }, {
+        "name" : "test_recharge[case_info8]",
+        "uid" : "6efa4f0d31d9a45c",
+        "parentUid" : "a462f02ce58254f466df03f42809e7ab",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841523278,
+          "stop" : 1609841523778,
+          "duration" : 500
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 9, 'interface': 'recharge', 'title': '充值金额输入小数位超过2位', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\",\"Authorization\":\"Bearer {{token2}}\"}', 'method': 'POST', 'url': '/member/recharge', 'input_params': '{\\n  \"member_id\": {{member_id2}},\\n  \"amount\": \"10000.666\"\\n}', 'expected': '{\\n  \"code\": 2,\\n  \"msg\": \"余额小数超过两位\"\\n}', 'check_SQL': None, 'sheet_name': 'recharge'}" ]
+      }, {
+        "name" : "test_recharge[case_info9]",
+        "uid" : "ebeec306a0f7442f",
+        "parentUid" : "a462f02ce58254f466df03f42809e7ab",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841523788,
+          "stop" : 1609841524288,
+          "duration" : 500
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 10, 'interface': 'recharge', 'title': '充值金额输入非数字', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\",\"Authorization\":\"Bearer {{token2}}\"}', 'method': 'POST', 'url': '/member/recharge', 'input_params': '{\\n  \"member_id\": {{member_id2}},\\n  \"amount\": \"￥10000\"\\n}', 'expected': '{\\n  \"code\": 2,\\n  \"msg\": \"余额必须为数值型\"\\n}', 'check_SQL': None, 'sheet_name': 'recharge'}" ]
+      }, {
+        "name" : "test_recharge[case_info10]",
+        "uid" : "e2ee3aaf46d9dbd6",
+        "parentUid" : "a462f02ce58254f466df03f42809e7ab",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841524298,
+          "stop" : 1609841524799,
+          "duration" : 501
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 11, 'interface': 'recharge', 'title': 'token错误', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\",\"Authorization\":\"Bearer XXXXXXXXX\"}', 'method': 'POST', 'url': '/member/recharge', 'input_params': '{\\n  \"member_id\": {{member_id2}},\\n  \"amount\": 10000.00\\n}', 'expected': '{\\n  \"code\": 1003,\\n  \"msg\": \"无法解析的JSON值，请检查token或Authorization请求头\"\\n}', 'check_SQL': None, 'sheet_name': 'recharge'}" ]
+      }, {
+        "name" : "test_recharge[case_info11]",
+        "uid" : "5f79fffee09a67bd",
+        "parentUid" : "a462f02ce58254f466df03f42809e7ab",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841524807,
+          "stop" : 1609841525294,
+          "duration" : 487
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 12, 'interface': 'recharge', 'title': '请求头缺少Authorization', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\"}', 'method': 'POST', 'url': '/member/recharge', 'input_params': '{\\n  \"member_id\": {{member_id2}},\\n  \"amount\": 10000.00\\n}', 'expected': '{\\n  \"code\": 1003,\\n  \"msg\": \"未授权或token已过期\"\\n}', 'check_SQL': None, 'sheet_name': 'recharge'}" ]
+      } ],
+      "uid" : "a462f02ce58254f466df03f42809e7ab"
+    }, {
+      "name" : "test_5_add_loan",
+      "children" : [ {
+        "name" : "test_add_loan[case_info0]",
+        "uid" : "48236bc3ec4a3436",
+        "parentUid" : "edf84f670bc4c980bff8beda59258222",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841525303,
+          "stop" : 1609841525860,
+          "duration" : 557
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 1, 'interface': 'addLoan', 'title': '正常加标-借款1000、年化率1、借款周期1个月、竞标天数1天', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\",\"Authorization\":\"Bearer {{token3}}\"}', 'method': 'POST', 'url': '/loan/add', 'input_params': '{\\n    \"member_id\":{{member_id3}},\\n    \"title\":\"购买测试课程_1\",\\n    \"amount\":1000.00,\\n    \"loan_rate\":1.0,\\n    \"loan_term\":1,\\n    \"loan_date_type\":1,\\n    \"bidding_days\":5\\n}', 'expected': '{\\n    \"code\": 0,\\n    \"msg\": \"OK\",\\n    \"data.amount\": 1000.00,\\n    \"data.bidding_days\": 5,\\n    \"data.loan_term\": 1,\\n    \"data.title\": \"购买测试课程_1\",\\n    \"data.loan_rate\": 1.0,\\n    \"data.loan_date_type\": 1,\\n    \"data.status\": 1\\n}', 'check_SQL': None, 'sheet_name': 'addLoan'}" ]
+      }, {
+        "name" : "test_add_loan[case_info1]",
+        "uid" : "a2db34f424054967",
+        "parentUid" : "edf84f670bc4c980bff8beda59258222",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841525877,
+          "stop" : 1609841526367,
+          "duration" : 490
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 2, 'interface': 'addLoan', 'title': '正常加标-借款1100、年化率24、借款周期36个月、竞标天数10天', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\",\"Authorization\":\"Bearer {{token3}}\"}', 'method': 'POST', 'url': '/loan/add', 'input_params': '{\\n    \"member_id\":{{member_id3}},\\n    \"title\":\"购买测试课程_2\",\\n    \"amount\":1100.00,\\n    \"loan_rate\":24.0,\\n    \"loan_term\":36,\\n    \"loan_date_type\":1,\\n    \"bidding_days\":5\\n}', 'expected': '{\\n    \"code\": 0,\\n    \"msg\": \"OK\",\\n    \"data.amount\": 1100.00,\\n    \"data.bidding_days\": 5,\\n    \"data.loan_term\": 36,\\n    \"data.title\": \"购买测试课程_2\",\\n    \"data.loan_rate\": 24,\\n    \"data.loan_date_type\": 1,\\n    \"data.status\": 1\\n}', 'check_SQL': None, 'sheet_name': 'addLoan'}" ]
+      }, {
+        "name" : "test_add_loan[case_info2]",
+        "uid" : "217b0c2e629aa97f",
+        "parentUid" : "edf84f670bc4c980bff8beda59258222",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841526377,
+          "stop" : 1609841526917,
+          "duration" : 540
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 3, 'interface': 'addLoan', 'title': '正常加标-借款500000、年化率2、借款周期10天、竞标天数2天', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\",\"Authorization\":\"Bearer {{token3}}\"}', 'method': 'POST', 'url': '/loan/add', 'input_params': '{\\n    \"member_id\":{{member_id3}},\\n    \"title\":\"购买测试课程_3\",\\n    \"amount\":500000.00,\\n    \"loan_rate\":2.0,\\n    \"loan_term\":10,\\n    \"loan_date_type\":2,\\n    \"bidding_days\":5\\n}', 'expected': '{\\n    \"code\": 0,\\n    \"msg\": \"OK\",\\n    \"data.amount\": 500000.00,\\n    \"data.bidding_days\": 5,\\n    \"data.loan_term\": 10,\\n    \"data.title\": \"购买测试课程_3\",\\n    \"data.loan_rate\": 2.0,\\n    \"data.loan_date_type\": 2,\\n    \"data.status\": 1\\n}', 'check_SQL': None, 'sheet_name': 'addLoan'}" ]
+      }, {
+        "name" : "test_add_loan[case_info3]",
+        "uid" : "f86a59be92988bf1",
+        "parentUid" : "edf84f670bc4c980bff8beda59258222",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841526927,
+          "stop" : 1609841527407,
+          "duration" : 480
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 4, 'interface': 'addLoan', 'title': '正常加标-借款100000、年化率23、借款周期45天、竞标天数5天', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\",\"Authorization\":\"Bearer {{token3}}\"}', 'method': 'POST', 'url': '/loan/add', 'input_params': '{\\n    \"member_id\":{{member_id3}},\\n    \"title\":\"购买测试课程_4\",\\n    \"amount\":100000.00,\\n    \"loan_rate\":23.0,\\n    \"loan_term\":45,\\n    \"loan_date_type\":2,\\n    \"bidding_days\":5\\n}', 'expected': '{\\n    \"code\": 0,\\n    \"msg\": \"OK\",\\n    \"data.amount\": 100000.00,\\n    \"data.bidding_days\": 5,\\n    \"data.loan_term\": 45,\\n    \"data.title\": \"购买测试课程_4\",\\n    \"data.loan_rate\": 23.0,\\n    \"data.loan_date_type\": 2,\\n    \"data.status\": 1\\n}', 'check_SQL': None, 'sheet_name': 'addLoan'}" ]
+      }, {
+        "name" : "test_add_loan[case_info4]",
+        "uid" : "24c0cc1431dfc5d4",
+        "parentUid" : "edf84f670bc4c980bff8beda59258222",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841527407,
+          "stop" : 1609841527917,
+          "duration" : 510
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 5, 'interface': 'addLoan', 'title': '借款人id为空', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\",\"Authorization\":\"Bearer {{token3}}\"}', 'method': 'POST', 'url': '/loan/add', 'input_params': '{\\n    \"title\":\"购买测试课程_5\",\\n    \"amount\":500000.00,\\n    \"loan_rate\":23.0,\\n    \"loan_term\":45,\\n    \"loan_date_type\":2,\\n    \"bidding_days\":9\\n}', 'expected': '{\\n  \"code\": 1,\\n  \"msg\": \"用户id为空\"\\n}', 'check_SQL': None, 'sheet_name': 'addLoan'}" ]
+      }, {
+        "name" : "test_add_loan[case_info5]",
+        "uid" : "bb1942fca00518ca",
+        "parentUid" : "edf84f670bc4c980bff8beda59258222",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841527927,
+          "stop" : 1609841528421,
+          "duration" : 494
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 6, 'interface': 'addLoan', 'title': '借款人id不存在', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\",\"Authorization\":\"Bearer {{token3}}\"}', 'method': 'POST', 'url': '/loan/add', 'input_params': '{\\n    \"member_id\":1000000000,\\n    \"title\":\"购买测试课程_6\",\\n    \"amount\":500000.00,\\n    \"loan_rate\":23.0,\\n    \"loan_term\":45,\\n    \"loan_date_type\":2,\\n    \"bidding_days\":9\\n}', 'expected': '{\\n  \"code\": 2,\\n  \"msg\": \"会员不存在\"\\n}', 'check_SQL': None, 'sheet_name': 'addLoan'}" ]
+      }, {
+        "name" : "test_add_loan[case_info6]",
+        "uid" : "3b5a411c5961cf8f",
+        "parentUid" : "edf84f670bc4c980bff8beda59258222",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841528429,
+          "stop" : 1609841528921,
+          "duration" : 492
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 7, 'interface': 'addLoan', 'title': '标题为空', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\",\"Authorization\":\"Bearer {{token3}}\"}', 'method': 'POST', 'url': '/loan/add', 'input_params': '{\\n    \"member_id\":{{member_id3}},\\n    \"title\":\"\",\\n    \"amount\":500000.00,\\n    \"loan_rate\":23.0,\\n    \"loan_term\":45,\\n    \"loan_date_type\":2,\\n    \"bidding_days\":9\\n}', 'expected': '{\\n  \"code\": 1,\\n  \"msg\": \"标题为空\"\\n}', 'check_SQL': None, 'sheet_name': 'addLoan'}" ]
+      }, {
+        "name" : "test_add_loan[case_info7]",
+        "uid" : "13c2e6cf90a7fd89",
+        "parentUid" : "edf84f670bc4c980bff8beda59258222",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841528930,
+          "stop" : 1609841529423,
+          "duration" : 493
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 8, 'interface': 'addLoan', 'title': '借款金额为空', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\",\"Authorization\":\"Bearer {{token3}}\"}', 'method': 'POST', 'url': '/loan/add', 'input_params': '{\\n    \"member_id\":{{member_id3}},\\n    \"title\":\"购买全栈测试课程_5\",\\n    \"loan_rate\":23.0,\\n    \"loan_term\":45,\\n    \"loan_date_type\":2,\\n    \"bidding_days\":9\\n}', 'expected': '{\\n  \"code\": 1,\\n  \"msg\": \"借款金额为空\"\\n}', 'check_SQL': None, 'sheet_name': 'addLoan'}" ]
+      }, {
+        "name" : "test_add_loan[case_info8]",
+        "uid" : "f4b982fab3307602",
+        "parentUid" : "edf84f670bc4c980bff8beda59258222",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841529461,
+          "stop" : 1609841530010,
+          "duration" : 549
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 9, 'interface': 'addLoan', 'title': '借款金额为负数', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\",\"Authorization\":\"Bearer {{token3}}\"}', 'method': 'POST', 'url': '/loan/add', 'input_params': '{\\n    \"member_id\":{{member_id3}},\\n    \"title\":\"购买全栈测试课程_5\",\\n    \"amount\":-1000,\\n    \"loan_rate\":23.0,\\n    \"loan_term\":45,\\n    \"loan_date_type\":2,\\n    \"bidding_days\":9\\n}', 'expected': '{\\n  \"code\": 2,\\n  \"msg\": \"借款金额范围错误\"\\n}', 'check_SQL': None, 'sheet_name': 'addLoan'}" ]
+      }, {
+        "name" : "test_add_loan[case_info9]",
+        "uid" : "7768f45f763b983d",
+        "parentUid" : "edf84f670bc4c980bff8beda59258222",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841530020,
+          "stop" : 1609841530510,
+          "duration" : 490
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 10, 'interface': 'addLoan', 'title': '借款金额为0', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\",\"Authorization\":\"Bearer {{token3}}\"}', 'method': 'POST', 'url': '/loan/add', 'input_params': '{\\n    \"member_id\":{{member_id3}},\\n    \"title\":\"购买全栈测试课程_5\",\\n    \"amount\":0.00,\\n    \"loan_rate\":23.0,\\n    \"loan_term\":45,\\n    \"loan_date_type\":2,\\n    \"bidding_days\":9\\n}', 'expected': '{\\n  \"code\": 2,\\n  \"msg\": \"借款金额范围错误\"\\n}', 'check_SQL': None, 'sheet_name': 'addLoan'}" ]
+      }, {
+        "name" : "test_add_loan[case_info10]",
+        "uid" : "6cdb5f3cc84ef899",
+        "parentUid" : "edf84f670bc4c980bff8beda59258222",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841530520,
+          "stop" : 1609841531020,
+          "duration" : 500
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 11, 'interface': 'addLoan', 'title': '借款金额为小数', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\",\"Authorization\":\"Bearer {{token3}}\"}', 'method': 'POST', 'url': '/loan/add', 'input_params': '{\\n    \"member_id\":{{member_id3}},\\n    \"title\":\"购买全栈测试课程_5\",\\n    \"amount\":1000.6,\\n    \"loan_rate\":23.0,\\n    \"loan_term\":45,\\n    \"loan_date_type\":2,\\n    \"bidding_days\":9\\n}', 'expected': '{\\n  \"code\": 2,\\n  \"msg\": \"借款金额范围错误\"\\n}', 'check_SQL': None, 'sheet_name': 'addLoan'}" ]
+      }, {
+        "name" : "test_add_loan[case_info11]",
+        "uid" : "a530c197b15fcfbf",
+        "parentUid" : "edf84f670bc4c980bff8beda59258222",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841531030,
+          "stop" : 1609841531550,
+          "duration" : 520
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 12, 'interface': 'addLoan', 'title': '借款金额为非100整除的整数', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\",\"Authorization\":\"Bearer {{token3}}\"}', 'method': 'POST', 'url': '/loan/add', 'input_params': '{\\n    \"member_id\":{{member_id3}},\\n    \"title\":\"购买全栈测试课程_5\",\\n    \"amount\":1001.00,\\n    \"loan_rate\":23,\\n    \"loan_term\":45,\\n    \"loan_date_type\":2,\\n    \"bidding_days\":9\\n}', 'expected': '{\\n  \"code\": 2,\\n  \"msg\": \"借款金额范围错误\"\\n}', 'check_SQL': None, 'sheet_name': 'addLoan'}" ]
+      }, {
+        "name" : "test_add_loan[case_info12]",
+        "uid" : "f91425c2b2410ded",
+        "parentUid" : "edf84f670bc4c980bff8beda59258222",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841531560,
+          "stop" : 1609841532041,
+          "duration" : 481
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 13, 'interface': 'addLoan', 'title': '年利率为空', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\",\"Authorization\":\"Bearer {{token3}}\"}', 'method': 'POST', 'url': '/loan/add', 'input_params': '{\\n    \"member_id\":{{member_id3}},\\n    \"title\":\"购买全栈测试课程_5\",\\n    \"amount\":1000.00,\\n    \"loan_term\":45,\\n    \"loan_date_type\":2,\\n    \"bidding_days\":9\\n}', 'expected': '{\\n  \"code\": 1,\\n  \"msg\": \"利率为空\"\\n}', 'check_SQL': None, 'sheet_name': 'addLoan'}" ]
+      }, {
+        "name" : "test_add_loan[case_info13]",
+        "uid" : "a3983f3a5bacc106",
+        "parentUid" : "edf84f670bc4c980bff8beda59258222",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841532050,
+          "stop" : 1609841532544,
+          "duration" : 494
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 14, 'interface': 'addLoan', 'title': '年利率为0', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\",\"Authorization\":\"Bearer {{token3}}\"}', 'method': 'POST', 'url': '/loan/add', 'input_params': '{\\n    \"member_id\":{{member_id3}},\\n    \"title\":\"购买全栈测试课程_5\",\\n    \"amount\":1000.00,\\n    \"loan_rate\":0.0,\\n    \"loan_term\":45,\\n    \"loan_date_type\":2,\\n    \"bidding_days\":9\\n}', 'expected': '{\\n  \"code\": 2,\\n  \"msg\": \"借款利率范围错误\"\\n}', 'check_SQL': None, 'sheet_name': 'addLoan'}" ]
+      }, {
+        "name" : "test_add_loan[case_info14]",
+        "uid" : "ff844600930100bd",
+        "parentUid" : "edf84f670bc4c980bff8beda59258222",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841532555,
+          "stop" : 1609841533036,
+          "duration" : 481
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 15, 'interface': 'addLoan', 'title': '年利率大于24', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\",\"Authorization\":\"Bearer {{token3}}\"}', 'method': 'POST', 'url': '/loan/add', 'input_params': '{\\n    \"member_id\":{{member_id3}},\\n    \"title\":\"购买全栈测试课程_5\",\\n    \"amount\":1000.00,\\n    \"loan_rate\":25.0,\\n    \"loan_term\":45,\\n    \"loan_date_type\":2,\\n    \"bidding_days\":9\\n}', 'expected': '{\\n  \"code\": 2,\\n  \"msg\": \"借款利率范围错误\"\\n}', 'check_SQL': None, 'sheet_name': 'addLoan'}" ]
+      }, {
+        "name" : "test_add_loan[case_info15]",
+        "uid" : "8d92debfb9e61b9a",
+        "parentUid" : "edf84f670bc4c980bff8beda59258222",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841533044,
+          "stop" : 1609841533535,
+          "duration" : 491
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 16, 'interface': 'addLoan', 'title': '借款期限为空', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\",\"Authorization\":\"Bearer {{token3}}\"}', 'method': 'POST', 'url': '/loan/add', 'input_params': '{\\n    \"member_id\":{{member_id3}},\\n    \"title\":\"购买全栈测试课程_5\",\\n    \"amount\":1000.00,\\n    \"loan_rate\":23.0,\\n    \"loan_term\":\"\",\\n    \"loan_date_type\":1,\\n    \"bidding_days\":9\\n}', 'expected': '{\\n  \"code\": 1,\\n  \"msg\": \"借款期限为空\"\\n}', 'check_SQL': None, 'sheet_name': 'addLoan'}" ]
+      }, {
+        "name" : "test_add_loan[case_info16]",
+        "uid" : "14326580f66007be",
+        "parentUid" : "edf84f670bc4c980bff8beda59258222",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841533545,
+          "stop" : 1609841534042,
+          "duration" : 497
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 17, 'interface': 'addLoan', 'title': '借款期限为0个月', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\",\"Authorization\":\"Bearer {{token3}}\"}', 'method': 'POST', 'url': '/loan/add', 'input_params': '{\\n    \"member_id\":{{member_id3}},\\n    \"title\":\"购买全栈测试课程_5\",\\n    \"amount\":1000.00,\\n    \"loan_rate\":23.0,\\n    \"loan_term\":\"0\",\\n    \"loan_date_type\":1,\\n    \"bidding_days\":9\\n}', 'expected': '{\\n  \"code\": 2,\\n  \"msg\": \"借款期限单位为月的项目,期限范围为1到36个月(包含1个月和36个月)\"\\n}', 'check_SQL': None, 'sheet_name': 'addLoan'}" ]
+      }, {
+        "name" : "test_add_loan[case_info17]",
+        "uid" : "6d32e7698248f510",
+        "parentUid" : "edf84f670bc4c980bff8beda59258222",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841534051,
+          "stop" : 1609841534540,
+          "duration" : 489
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 18, 'interface': 'addLoan', 'title': '借款期限为37个月', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\",\"Authorization\":\"Bearer {{token3}}\"}', 'method': 'POST', 'url': '/loan/add', 'input_params': '{\\n    \"member_id\":{{member_id3}},\\n    \"title\":\"购买全栈测试课程_5\",\\n    \"amount\":1000.00,\\n    \"loan_rate\":23.0,\\n    \"loan_term\":\"37\",\\n    \"loan_date_type\":1,\\n    \"bidding_days\":9\\n}', 'expected': '{\\n  \"code\": 2,\\n  \"msg\": \"借款期限单位为月的项目,期限范围为1到36个月(包含1个月和36个月)\"\\n}', 'check_SQL': None, 'sheet_name': 'addLoan'}" ]
+      }, {
+        "name" : "test_add_loan[case_info18]",
+        "uid" : "ab5abf970f62f99a",
+        "parentUid" : "edf84f670bc4c980bff8beda59258222",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841534549,
+          "stop" : 1609841535042,
+          "duration" : 493
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 19, 'interface': 'addLoan', 'title': '借款期限为9天', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\",\"Authorization\":\"Bearer {{token3}}\"}', 'method': 'POST', 'url': '/loan/add', 'input_params': '{\\n    \"member_id\":{{member_id3}},\\n    \"title\":\"购买全栈测试课程_5\",\\n    \"amount\":1000.00,\\n    \"loan_rate\":23.0,\\n    \"loan_term\":\"9\",\\n    \"loan_date_type\":2,\\n    \"bidding_days\":9\\n}', 'expected': '{\\n  \"code\": 2,\\n  \"msg\": \"借款期限单位为天的项目,期限范围为10到45天(包含10天和45天)\"\\n}', 'check_SQL': None, 'sheet_name': 'addLoan'}" ]
+      }, {
+        "name" : "test_add_loan[case_info19]",
+        "uid" : "96207090425b700f",
+        "parentUid" : "edf84f670bc4c980bff8beda59258222",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841535051,
+          "stop" : 1609841535542,
+          "duration" : 491
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 20, 'interface': 'addLoan', 'title': '借款期限为46天', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\",\"Authorization\":\"Bearer {{token3}}\"}', 'method': 'POST', 'url': '/loan/add', 'input_params': '{\\n    \"member_id\":{{member_id3}},\\n    \"title\":\"购买全栈测试课程_5\",\\n    \"amount\":1000.00,\\n    \"loan_rate\":23.0,\\n    \"loan_term\":\"46\",\\n    \"loan_date_type\":2,\\n    \"bidding_days\":9\\n}', 'expected': '{\\n  \"code\": 2,\\n  \"msg\": \"借款期限单位为天的项目,期限范围为10到45天(包含10天和45天)\"\\n}', 'check_SQL': None, 'sheet_name': 'addLoan'}" ]
+      }, {
+        "name" : "test_add_loan[case_info20]",
+        "uid" : "d88116e3195313c5",
+        "parentUid" : "edf84f670bc4c980bff8beda59258222",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841535551,
+          "stop" : 1609841536047,
+          "duration" : 496
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 21, 'interface': 'addLoan', 'title': '借款期限类型不输入', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\",\"Authorization\":\"Bearer {{token3}}\"}', 'method': 'POST', 'url': '/loan/add', 'input_params': '{\\n    \"member_id\":{{member_id3}},\\n    \"title\":\"购买全栈测试课程_5\",\\n    \"amount\":1000.00,\\n    \"loan_rate\":23.0,\\n    \"loan_term\":3,\\n    \"loan_date_type\":\"\",\\n    \"bidding_days\":9\\n}', 'expected': '{\\n  \"code\": 1,\\n  \"msg\": \"借款日期类型为空\"\\n}', 'check_SQL': None, 'sheet_name': 'addLoan'}" ]
+      }, {
+        "name" : "test_add_loan[case_info21]",
+        "uid" : "ba69e8f76a9a1cc8",
+        "parentUid" : "edf84f670bc4c980bff8beda59258222",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841536055,
+          "stop" : 1609841536545,
+          "duration" : 490
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 22, 'interface': 'addLoan', 'title': '借款期限类型输入非1、2', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\",\"Authorization\":\"Bearer {{token3}}\"}', 'method': 'POST', 'url': '/loan/add', 'input_params': '{\\n    \"member_id\":{{member_id3}},\\n    \"title\":\"购买全栈测试课程_5\",\\n    \"amount\":1000.00,\\n    \"loan_rate\":23.0,\\n    \"loan_term\":3,\\n    \"loan_date_type\":3,\\n    \"bidding_days\":9\\n}', 'expected': '{\\n  \"code\": 2,\\n  \"msg\": \"借款类型不存在\"\\n}', 'check_SQL': None, 'sheet_name': 'addLoan'}" ]
+      }, {
+        "name" : "test_add_loan[case_info22]",
+        "uid" : "bd199be720e23c5e",
+        "parentUid" : "edf84f670bc4c980bff8beda59258222",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841536556,
+          "stop" : 1609841537054,
+          "duration" : 498
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 23, 'interface': 'addLoan', 'title': '竞标天数为空', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\",\"Authorization\":\"Bearer {{token3}}\"}', 'method': 'POST', 'url': '/loan/add', 'input_params': '{\\n    \"member_id\":{{member_id3}},\\n    \"title\":\"购买全栈测试课程_5\",\\n    \"amount\":1000.00,\\n    \"loan_rate\":23.0,\\n    \"loan_term\":3,\\n    \"loan_date_type\":1,\\n    \"bidding_days\":\"\"\\n}', 'expected': '{\\n  \"code\": 1,\\n  \"msg\": \"竞标期限为空\"\\n}', 'check_SQL': None, 'sheet_name': 'addLoan'}" ]
+      }, {
+        "name" : "test_add_loan[case_info23]",
+        "uid" : "7890deff337012cc",
+        "parentUid" : "edf84f670bc4c980bff8beda59258222",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841537068,
+          "stop" : 1609841537545,
+          "duration" : 477
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 24, 'interface': 'addLoan', 'title': '竞标天数输入超出10天', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\",\"Authorization\":\"Bearer {{token3}}\"}', 'method': 'POST', 'url': '/loan/add', 'input_params': '{\\n    \"member_id\":{{member_id3}},\\n    \"title\":\"购买全栈测试课程_5\",\\n    \"amount\":1000.00,\\n    \"loan_rate\":23.0,\\n    \"loan_term\":\"3\",\\n    \"loan_date_type\":\"1\",\\n    \"bidding_days\":\"11\"\\n}', 'expected': '{\\n  \"code\": 2,\\n  \"msg\": \"竞标期限为1-10天\"\\n}', 'check_SQL': None, 'sheet_name': 'addLoan'}" ]
+      }, {
+        "name" : "test_add_loan[case_info24]",
+        "uid" : "a4c422e12c4e30d1",
+        "parentUid" : "edf84f670bc4c980bff8beda59258222",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841537555,
+          "stop" : 1609841538065,
+          "duration" : 510
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 25, 'interface': 'addLoan', 'title': '竞标天数输入0天', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\",\"Authorization\":\"Bearer {{token3}}\"}', 'method': 'POST', 'url': '/loan/add', 'input_params': '{\\n    \"member_id\":{{member_id3}},\\n    \"title\":\"购买全栈测试课程_5\",\\n    \"amount\":1000.00,\\n    \"loan_rate\":23.0,\\n    \"loan_term\":\"3\",\\n    \"loan_date_type\":\"1\",\\n    \"bidding_days\":\"0\"\\n}', 'expected': '{\\n  \"code\": 2,\\n  \"msg\": \"竞标期限为1-10天\"\\n}', 'check_SQL': None, 'sheet_name': 'addLoan'}" ]
+      } ],
+      "uid" : "edf84f670bc4c980bff8beda59258222"
+    }, {
+      "name" : "test_6_audit_loan",
+      "children" : [ {
+        "name" : "test_audit_loan[case_info0]",
+        "uid" : "7e9f9616260241de",
+        "parentUid" : "7128caec632149271ed1822e7b09416a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841538080,
+          "stop" : 1609841538119,
+          "duration" : 39
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 1, 'interface': 'addLoan', 'title': '正常审核', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\",\"Authorization\":\"Bearer {{token1}}\"}', 'method': 'PATCH', 'url': '/loan/audit', 'input_params': '{\"loan_id\":{{loan_id}},\"approved_or_not\":True}', 'expected': '{\"code\": 0, \"msg\": \"OK\"}', 'check_SQL': None, 'sheet_name': 'auditLoan'}" ]
+      } ],
+      "uid" : "7128caec632149271ed1822e7b09416a"
+    }, {
+      "name" : "test_7_invest",
+      "children" : [ {
+        "name" : "test_invest[case_info0]",
+        "uid" : "df587aa692f8665d",
+        "parentUid" : "3c0daf7276d88d50d7e4090e45f56a71",
+        "status" : "passed",
+        "time" : {
+          "start" : 1609841538127,
+          "stop" : 1609841538559,
+          "duration" : 432
+        },
+        "flaky" : false,
+        "parameters" : [ "{'case_id': 1, 'interface': 'invest', 'title': '正常投资', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\",\"Authorization\":\"Bearer {{token2}}\"}', 'method': 'post', 'url': '/member/invest', 'input_params': '{\"member_id\":{{member_id2}},\"loan_id\":{{loan_id}},\"amount\":100.00}', 'expected': '{\"code\":0,\"msg\":\"OK\",\"data.member_id\":{{member_id2}},\"data.loan_id\":{{loan_id}}, \"data.amount\": 100}', 'check_SQL': None, 'sheet_name': 'invest'}" ]
+      } ],
+      "uid" : "3c0daf7276d88d50d7e4090e45f56a71"
+    } ],
+    "uid" : "1dd5dae00c58193b69825e57e00d160e"
+  } ]
+}

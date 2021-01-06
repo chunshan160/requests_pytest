@@ -1,0 +1,125 @@
+{
+  "uid" : "df587aa692f8665d",
+  "name" : "test_invest[case_info0]",
+  "fullName" : "TestCases.test_7_invest.TestInvest#test_invest[case_info0]",
+  "historyId" : "630509abb39f70f6577565fec4cf8607",
+  "time" : {
+    "start" : 1609841538127,
+    "stop" : 1609841538559,
+    "duration" : 432
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "对当前的case进行参数化替换",
+      "time" : {
+        "start" : 1609841538128,
+        "stop" : 1609841538128,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "发起请求",
+      "time" : {
+        "start" : 1609841538128,
+        "stop" : 1609841538558,
+        "duration" : 430
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "响应结果断言",
+      "time" : {
+        "start" : 1609841538558,
+        "stop" : 1609841538558,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "678908707d82a9cf",
+      "name" : "log",
+      "source" : "678908707d82a9cf.txt",
+      "type" : "text/plain",
+      "size" : 1068
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 3,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "投资接口"
+  }, {
+    "name" : "story",
+    "value" : "测试投资接口"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCases"
+  }, {
+    "name" : "suite",
+    "value" : "test_7_invest"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestInvest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-4EMDDAT"
+  }, {
+    "name" : "thread",
+    "value" : "12908-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCases.test_7_invest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_info",
+    "value" : "{'case_id': 1, 'interface': 'invest', 'title': '正常投资', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\",\"Authorization\":\"Bearer {{token2}}\"}', 'method': 'post', 'url': '/member/invest', 'input_params': '{\"member_id\":{{member_id2}},\"loan_id\":{{loan_id}},\"amount\":100.00}', 'expected': '{\"code\":0,\"msg\":\"OK\",\"data.member_id\":{{member_id2}},\"data.loan_id\":{{loan_id}}, \"data.amount\": 100}', 'check_SQL': None, 'sheet_name': 'invest'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "df587aa692f8665d.json",
+  "parameterValues" : [ "{'case_id': 1, 'interface': 'invest', 'title': '正常投资', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\",\"Authorization\":\"Bearer {{token2}}\"}', 'method': 'post', 'url': '/member/invest', 'input_params': '{\"member_id\":{{member_id2}},\"loan_id\":{{loan_id}},\"amount\":100.00}', 'expected': '{\"code\":0,\"msg\":\"OK\",\"data.member_id\":{{member_id2}},\"data.loan_id\":{{loan_id}}, \"data.amount\": 100}', 'check_SQL': None, 'sheet_name': 'invest'}" ]
+}

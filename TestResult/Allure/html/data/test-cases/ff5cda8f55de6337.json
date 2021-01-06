@@ -1,0 +1,140 @@
+{
+  "uid" : "ff5cda8f55de6337",
+  "name" : "test_recharge[case_info7]",
+  "fullName" : "TestCases.test_4_recharge.TestRecharge#test_recharge[case_info7]",
+  "historyId" : "5237dcff2e3d9d3d48358bf075d2e18f",
+  "time" : {
+    "start" : 1609841522768,
+    "stop" : 1609841523268,
+    "duration" : 500
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "对当前的case进行参数化替换",
+      "time" : {
+        "start" : 1609841522768,
+        "stop" : 1609841522768,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "发起请求",
+      "time" : {
+        "start" : 1609841522768,
+        "stop" : 1609841523268,
+        "duration" : 500
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "响应结果断言",
+      "time" : {
+        "start" : 1609841523268,
+        "stop" : 1609841523268,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "数据库断言",
+      "time" : {
+        "start" : 1609841523268,
+        "stop" : 1609841523268,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "119c5373233976aa",
+      "name" : "log",
+      "source" : "119c5373233976aa.txt",
+      "type" : "text/plain",
+      "size" : 993
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 4,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "测试充值接口"
+  }, {
+    "name" : "feature",
+    "value" : "充值接口"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCases"
+  }, {
+    "name" : "suite",
+    "value" : "test_4_recharge"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestRecharge"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-4EMDDAT"
+  }, {
+    "name" : "thread",
+    "value" : "12908-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCases.test_4_recharge"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case_info",
+    "value" : "{'case_id': 8, 'interface': 'recharge', 'title': '充值金额输入超出50w', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\",\"Authorization\":\"Bearer {{token2}}\"}', 'method': 'POST', 'url': '/member/recharge', 'input_params': '{\\n  \"member_id\": {{member_id2}},\\n  \"amount\": 500000.01\\n}', 'expected': '{\\n  \"code\": 2,\\n  \"msg\": \"余额必须大于0并且小于或者等于500000\"\\n}', 'check_SQL': None, 'sheet_name': 'recharge'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ff5cda8f55de6337.json",
+  "parameterValues" : [ "{'case_id': 8, 'interface': 'recharge', 'title': '充值金额输入超出50w', 'request_header': '{\"X-Lemonban-Media-Type\":\"lemonban.v2\",\"Content-Type\":\"application/json\",\"Authorization\":\"Bearer {{token2}}\"}', 'method': 'POST', 'url': '/member/recharge', 'input_params': '{\\n  \"member_id\": {{member_id2}},\\n  \"amount\": 500000.01\\n}', 'expected': '{\\n  \"code\": 2,\\n  \"msg\": \"余额必须大于0并且小于或者等于500000\"\\n}', 'check_SQL': None, 'sheet_name': 'recharge'}" ]
+}
