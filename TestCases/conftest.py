@@ -9,7 +9,7 @@ import pytest
 import sys
 import shutil
 sys.path.append(os.path.split(os.path.split(os.path.realpath(__file__))[0])[0])
-from tools.project_path import log_path
+from Base.project_path import log_path
 from Base.GlobalEnvironment import GlobalEnvironment
 
 # 初始化，创建全局环境变量

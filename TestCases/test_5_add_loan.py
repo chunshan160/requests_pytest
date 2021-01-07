@@ -11,7 +11,7 @@ from Base.BaseCase import BaseCase
 from Base.GlobalEnvironment import GlobalEnvironment
 from tools.do_excel import DoExcel
 from tools.http_request import HttpRequest
-from tools.project_path import test_data_path
+from Base.project_path import test_data_path
 
 
 @pytest.mark.run(order=5)

@@ -4,12 +4,11 @@
 # @Author :春衫
 # @File :UserLog.py
 
-import datetime
 import logging
 import os
 
-from tools.project_path import log_path
-from tools.project_path import logs_config_path
+from Base.project_path import log_path
+from Base.project_path import logs_config_path
 from tools.read_yaml import read_yaml
 
 

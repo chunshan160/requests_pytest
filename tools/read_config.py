@@ -16,7 +16,7 @@ class ReadConfig:
 
 
 if __name__ == '__main__':
-    from tools.project_path import *
+    from Base.project_path import *
 
     res = ReadConfig().read_config(case_config_path)
     print(type(res))

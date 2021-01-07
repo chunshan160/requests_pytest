@@ -6,7 +6,7 @@
 import os
 import pytest
 
-from tools.project_path import allure_report, allure_result
+from Base.project_path import allure_report, allure_result
 print(allure_report)
 print(allure_result)
 pytest.main(

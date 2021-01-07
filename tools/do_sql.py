@@ -5,7 +5,7 @@
 # @File :learn_sql.py
 
 import pymysql
-from tools.project_path import db_config_path
+from Base.project_path import db_config_path
 from tools.read_config import ReadConfig
 
 
