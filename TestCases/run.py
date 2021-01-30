@@ -7,8 +7,6 @@ import os
 import pytest
 
 from Base.project_path import allure_report, allure_result
-print(allure_report)
-print(allure_result)
 pytest.main(
     ["-v", "-s", "--alluredir", allure_result, "--clean-alluredir"])
 
