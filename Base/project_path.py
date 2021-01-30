@@ -38,7 +38,7 @@ image_path = os.path.join(project_path, "Source", "picture.jpg")
 allure_report = os.path.join(project_path, "TestResult", "Allure", "report")
 
 # allure_result保存地址
-allure_result = os.path.join(project_path, "TestResult", "Allure", "result")
+allure_result = os.path.join(project_path, "TestResult", "Allure", "results")
 
 js = os.path.join(project_path, "Source", "des2.js")
 
