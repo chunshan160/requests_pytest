@@ -1,0 +1,8 @@
+2021-01-30 22:50:42,239 - DEBUG - UserLog.py - 春衫 - 日志信息:请求头：{'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Content-Length': '54'}
+2021-01-30 22:50:42,241 - DEBUG - UserLog.py - 春衫 - 日志信息:请求正文：{'mobile_phone': '15815541763', 'pwd': 'lemon1234567'}
+2021-01-30 22:50:42,242 - DEBUG - UserLog.py - 春衫 - 日志信息:响应头：{'Server': 'nginx/1.4.2', 'Date': 'Sat, 30 Jan 2021 14:50:41 GMT', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive'}
+2021-01-30 22:50:42,243 - DEBUG - UserLog.py - 春衫 - 日志信息:响应正文：{"code":1001,"msg":"账号信息错误","data":null,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}
+2021-01-30 22:59:29,342 - DEBUG - UserLog.py - 春衫 - 日志信息:请求头：{'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Content-Length': '54'}
+2021-01-30 22:59:29,345 - DEBUG - UserLog.py - 春衫 - 日志信息:请求正文：{'mobile_phone': '15815541763', 'pwd': 'lemon1234567'}
+2021-01-30 22:59:29,347 - DEBUG - UserLog.py - 春衫 - 日志信息:响应头：{'Server': 'nginx/1.4.2', 'Date': 'Sat, 30 Jan 2021 14:59:28 GMT', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive'}
+2021-01-30 22:59:29,349 - DEBUG - UserLog.py - 春衫 - 日志信息:响应正文：{"code":1001,"msg":"账号信息错误","data":null,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}

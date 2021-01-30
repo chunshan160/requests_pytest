@@ -1,0 +1,8 @@
+2021-01-30 22:50:43,165 - DEBUG - UserLog.py - 春衫 - 日志信息:请求头：{'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Content-Length': '41'}
+2021-01-30 22:50:43,166 - DEBUG - UserLog.py - 春衫 - 日志信息:请求正文：{'member_id': 1188641, 'amount': 10000.0}
+2021-01-30 22:50:43,167 - DEBUG - UserLog.py - 春衫 - 日志信息:响应头：{'Server': 'nginx/1.4.2', 'Date': 'Sat, 30 Jan 2021 14:50:42 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive'}
+2021-01-30 22:50:43,168 - DEBUG - UserLog.py - 春衫 - 日志信息:响应正文：{"code":1003,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved","msg":"未授权或token已过期"}
+2021-01-30 22:59:30,241 - DEBUG - UserLog.py - 春衫 - 日志信息:请求头：{'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Content-Length': '41'}
+2021-01-30 22:59:30,244 - DEBUG - UserLog.py - 春衫 - 日志信息:请求正文：{'member_id': 1188653, 'amount': 10000.0}
+2021-01-30 22:59:30,246 - DEBUG - UserLog.py - 春衫 - 日志信息:响应头：{'Server': 'nginx/1.4.2', 'Date': 'Sat, 30 Jan 2021 14:59:29 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive'}
+2021-01-30 22:59:30,248 - DEBUG - UserLog.py - 春衫 - 日志信息:响应正文：{"code":1003,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved","msg":"未授权或token已过期"}

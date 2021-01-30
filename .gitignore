@@ -11,3 +11,4 @@
 *.jar
 *.pyc
 *.json
+TestCases/TestResult/Allure/results/
