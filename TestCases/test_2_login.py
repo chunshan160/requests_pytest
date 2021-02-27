@@ -8,11 +8,11 @@ import pytest
 import jmespath
 import allure
 
+from Base.RelyData import RelyData
 from tools.do_excel import DoExcel
 from tools.http_request import HttpRequest
 from Base.project_path import test_data_path
 from Base.BaseCase import BaseCase
-from Base.GlobalEnvironment import GlobalEnvironment
 
 @pytest.mark.run(order=2)
 @allure.feature('登录接口')
@@ -39,15 +39,15 @@ class TestLogin(BaseCase):
                 token = jmespath.search("data.token_info.token", res.json())
                 if case_info["case_id"] == 1:
                     # 2、保存到环境变量中
-                    GlobalEnvironment().put("token1", token)
+                    setattr(RelyData, "token1", token)
 
                 elif case_info["case_id"] == 2:
                     # 2、保存到环境变量中
-                    GlobalEnvironment().put("token2", token)
+                    setattr(RelyData, "token2", token)
 
                 elif case_info["case_id"] == 3:
                     # 2、保存到环境变量中
-                    GlobalEnvironment().put("token3", token)
+                    setattr(RelyData, "token3", token)
 
 
 

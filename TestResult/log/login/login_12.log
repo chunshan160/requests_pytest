@@ -6,3 +6,11 @@
 2021-01-30 22:59:29,251 - DEBUG - UserLog.py - 春衫 - 日志信息:请求正文：{'mobile_phone': '15815541764', 'pwd': 'lemon123456789012'}
 2021-01-30 22:59:29,252 - DEBUG - UserLog.py - 春衫 - 日志信息:响应头：{'Server': 'nginx/1.4.2', 'Date': 'Sat, 30 Jan 2021 14:59:28 GMT', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive'}
 2021-01-30 22:59:29,254 - DEBUG - UserLog.py - 春衫 - 日志信息:响应正文：{"code":1001,"msg":"账号信息错误","data":null,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}
+2021-02-02 12:43:42,661 - DEBUG - UserLog.py - 春衫 - 日志信息:请求头：{'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Content-Length': '59'}
+2021-02-02 12:43:42,671 - DEBUG - UserLog.py - 春衫 - 日志信息:请求正文：{'mobile_phone': '15815541764', 'pwd': 'lemon123456789012'}
+2021-02-02 12:43:42,671 - DEBUG - UserLog.py - 春衫 - 日志信息:响应头：{'Server': 'nginx/1.4.2', 'Date': 'Tue, 02 Feb 2021 04:43:41 GMT', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive'}
+2021-02-02 12:43:42,671 - DEBUG - UserLog.py - 春衫 - 日志信息:响应正文：{"code":1001,"msg":"账号信息错误","data":null,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}
+2021-02-25 15:54:11,806 - DEBUG - UserLog.py - 春衫 - 日志信息:请求头：{'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Content-Length': '59'}
+2021-02-25 15:54:11,822 - DEBUG - UserLog.py - 春衫 - 日志信息:请求正文：{'mobile_phone': '15815541764', 'pwd': 'lemon123456789012'}
+2021-02-25 15:54:11,827 - DEBUG - UserLog.py - 春衫 - 日志信息:响应头：{'Server': 'nginx/1.4.2', 'Date': 'Thu, 25 Feb 2021 07:54:10 GMT', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive'}
+2021-02-25 15:54:11,830 - DEBUG - UserLog.py - 春衫 - 日志信息:响应正文：{"code":1001,"msg":"账号信息错误","data":null,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}

@@ -8,8 +8,8 @@ import allure
 import pytest
 import jmespath
 
+from Base.RelyData import RelyData
 from Base.BaseCase import BaseCase
-from Base.GlobalEnvironment import GlobalEnvironment
 from tools.do_excel import DoExcel
 from Base.project_path import test_data_path
 from tools.http_request import HttpRequest
@@ -20,21 +20,19 @@ class TestRegister(BaseCase):
     caseInfoList = DoExcel.getCaseDataFromExcel(test_data_path, "register")
 
     @allure.story("注册新账号")
-    # @pytest.mark.usefixtures("del_file")
-    @pytest.mark.usefixtures("global_environment")
     @pytest.mark.parametrize("caseInfo", caseInfoList)  # 替代ddt
     def test_register(self, caseInfo):
         with allure.step("读数据库获取没有注册过的手机号码"):
             # 读数据库获取没有注册过的手机号码
             if caseInfo["case_id"] == 1:
                 mobile_phone = self.get_random_phone()
-                GlobalEnvironment().put("mobile_phone1", mobile_phone)
+                setattr(RelyData, "mobile_phone1", mobile_phone)
             elif caseInfo["case_id"] == 2:
                 mobile_phone = self.get_random_phone()
-                GlobalEnvironment().put("mobile_phone2", mobile_phone)
+                setattr(RelyData, "mobile_phone2", mobile_phone)
             elif caseInfo["case_id"] == 3:
                 mobile_phone = self.get_random_phone()
-                GlobalEnvironment().put("mobile_phone3", mobile_phone)
+                setattr(RelyData, "mobile_phone3", mobile_phone)
 
         with allure.step("对当前的case进行参数化替换"):
             # 对当前的case进行参数化替换
@@ -57,21 +55,21 @@ class TestRegister(BaseCase):
                 # 3、注册成功的密码--从用例数据里面
                 pwd = case_info['input_params']['pwd']
                 if case_info["case_id"] == 1:
-                    GlobalEnvironment().put("mobile_phone1", mobile_phone)
-                    GlobalEnvironment().put("member_id1", memberId)
-                    GlobalEnvironment().put("pwd1", pwd)
+                    setattr(RelyData, "mobile_phone1", mobile_phone)
+                    setattr(RelyData, "member_id1", memberId)
+                    setattr(RelyData, "pwd1", pwd)
 
                 elif case_info["case_id"] == 2:
                     # 2、保存到环境变量中
-                    GlobalEnvironment().put("mobile_phone2", mobile_phone)
-                    GlobalEnvironment().put("member_id2", memberId)
-                    GlobalEnvironment().put("pwd2", pwd)
+                    setattr(RelyData, "mobile_phone2", mobile_phone)
+                    setattr(RelyData, "member_id2", memberId)
+                    setattr(RelyData, "pwd2", pwd)
 
                 elif case_info["case_id"] == 3:
                     # 2、保存到环境变量中
-                    GlobalEnvironment().put("mobile_phone3", mobile_phone)
-                    GlobalEnvironment().put("member_id3", memberId)
-                    GlobalEnvironment().put("pwd3", pwd)
+                    setattr(RelyData, "mobile_phone3", mobile_phone)
+                    setattr(RelyData, "member_id3", memberId)
+                    setattr(RelyData, "pwd3", pwd)
 
 
 

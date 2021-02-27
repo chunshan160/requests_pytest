@@ -6,3 +6,11 @@
 2021-01-30 22:59:30,199 - DEBUG - UserLog.py - 春衫 - 日志信息:请求正文：{'member_id': 1188653, 'amount': 10000.0}
 2021-01-30 22:59:30,200 - DEBUG - UserLog.py - 春衫 - 日志信息:响应头：{'Server': 'nginx/1.4.2', 'Date': 'Sat, 30 Jan 2021 14:59:29 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive'}
 2021-01-30 22:59:30,201 - DEBUG - UserLog.py - 春衫 - 日志信息:响应正文：{"code":1003,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved","msg":"无法解析的JSON值，请检查token或Authorization请求头"}
+2021-02-02 12:43:43,821 - DEBUG - UserLog.py - 春衫 - 日志信息:请求头：{'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer XXXXXXXXX', 'Content-Length': '41'}
+2021-02-02 12:43:43,831 - DEBUG - UserLog.py - 春衫 - 日志信息:请求正文：{'member_id': 1192062, 'amount': 10000.0}
+2021-02-02 12:43:43,831 - DEBUG - UserLog.py - 春衫 - 日志信息:响应头：{'Server': 'nginx/1.4.2', 'Date': 'Tue, 02 Feb 2021 04:43:42 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive'}
+2021-02-02 12:43:43,841 - DEBUG - UserLog.py - 春衫 - 日志信息:响应正文：{"code":1003,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved","msg":"无法解析的JSON值，请检查token或Authorization请求头"}
+2021-02-25 15:54:13,645 - DEBUG - UserLog.py - 春衫 - 日志信息:请求头：{'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Authorization': 'Bearer XXXXXXXXX', 'Content-Length': '44'}
+2021-02-25 15:54:13,662 - DEBUG - UserLog.py - 春衫 - 日志信息:请求正文：{'member_id': 1000082617, 'amount': 10000.0}
+2021-02-25 15:54:13,668 - DEBUG - UserLog.py - 春衫 - 日志信息:响应头：{'Server': 'nginx/1.4.2', 'Date': 'Thu, 25 Feb 2021 07:54:12 GMT', 'Content-Type': 'application/json;charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive'}
+2021-02-25 15:54:13,671 - DEBUG - UserLog.py - 春衫 - 日志信息:响应正文：{"code":1003,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved","msg":"无法解析的JSON值，请检查token或Authorization请求头"}

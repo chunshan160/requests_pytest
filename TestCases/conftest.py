@@ -8,14 +8,11 @@ import os
 import pytest
 import sys
 import shutil
+
 sys.path.append(os.path.split(os.path.split(os.path.realpath(__file__))[0])[0])
 from Base.project_path import log_path
-from Base.GlobalEnvironment import GlobalEnvironment
 
-# 初始化，创建全局环境变量
-@pytest.fixture(scope="session")
-def global_environment():
-    GlobalEnvironment()._init()
+
 
 @pytest.fixture(scope="session")
 def del_file():
@@ -26,8 +23,9 @@ def del_file():
         # 删除文件，可使用以下两种方法。
         shutil.rmtree(log_path)
 
+    # 代替parametrize的一种思路
 
-    #代替parametrize的一种思路
+
 # def getCaseDataFromExcel(sheet):
 #     caseInfoList = DoExcel.getCaseDataFromExcel(test_data_path, sheet)
 #     return caseInfoList

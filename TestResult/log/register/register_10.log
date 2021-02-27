@@ -6,3 +6,23 @@
 2021-01-30 22:59:28,494 - DEBUG - UserLog.py - 春衫 - 日志信息:请求正文：{'mobile_phone': '15815541766', 'pwd': '', 'type': '1', 'reg_name': 'mengmeng'}
 2021-01-30 22:59:28,497 - DEBUG - UserLog.py - 春衫 - 日志信息:响应头：{'Server': 'nginx/1.4.2', 'Date': 'Sat, 30 Jan 2021 14:59:27 GMT', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive'}
 2021-01-30 22:59:28,500 - DEBUG - UserLog.py - 春衫 - 日志信息:响应正文：{"code":1,"msg":"密码为空","data":null,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}
+2021-02-02 12:43:41,781 - DEBUG - UserLog.py - 春衫 - 日志信息:请求头：{'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Content-Length': '79'}
+2021-02-02 12:43:41,791 - DEBUG - UserLog.py - 春衫 - 日志信息:请求正文：{'mobile_phone': '15815541766', 'pwd': '', 'type': '1', 'reg_name': 'mengmeng'}
+2021-02-02 12:43:41,791 - DEBUG - UserLog.py - 春衫 - 日志信息:响应头：{'Server': 'nginx/1.4.2', 'Date': 'Tue, 02 Feb 2021 04:43:40 GMT', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive'}
+2021-02-02 12:43:41,791 - DEBUG - UserLog.py - 春衫 - 日志信息:响应正文：{"code":1,"msg":"密码为空","data":null,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}
+2021-02-25 15:45:32,984 - DEBUG - UserLog.py - 春衫 - 日志信息:请求头：{'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Content-Length': '79'}
+2021-02-25 15:45:32,996 - DEBUG - UserLog.py - 春衫 - 日志信息:请求正文：{'mobile_phone': '15815541766', 'pwd': '', 'type': '1', 'reg_name': 'mengmeng'}
+2021-02-25 15:45:33,005 - DEBUG - UserLog.py - 春衫 - 日志信息:响应头：{'Server': 'nginx/1.4.2', 'Date': 'Thu, 25 Feb 2021 07:45:31 GMT', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive'}
+2021-02-25 15:45:33,007 - DEBUG - UserLog.py - 春衫 - 日志信息:响应正文：{"code":1,"msg":"密码为空","data":null,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}
+2021-02-25 15:46:54,280 - DEBUG - UserLog.py - 春衫 - 日志信息:请求头：{'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Content-Length': '79'}
+2021-02-25 15:46:54,280 - DEBUG - UserLog.py - 春衫 - 日志信息:请求正文：{'mobile_phone': '15815541766', 'pwd': '', 'type': '1', 'reg_name': 'mengmeng'}
+2021-02-25 15:46:54,280 - DEBUG - UserLog.py - 春衫 - 日志信息:响应头：{'Server': 'nginx/1.4.2', 'Date': 'Thu, 25 Feb 2021 07:46:52 GMT', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive'}
+2021-02-25 15:46:54,292 - DEBUG - UserLog.py - 春衫 - 日志信息:响应正文：{"code":1,"msg":"密码为空","data":null,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}
+2021-02-25 15:50:25,399 - DEBUG - UserLog.py - 春衫 - 日志信息:请求头：{'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Content-Length': '79'}
+2021-02-25 15:50:25,399 - DEBUG - UserLog.py - 春衫 - 日志信息:请求正文：{'mobile_phone': '15815541766', 'pwd': '', 'type': '1', 'reg_name': 'mengmeng'}
+2021-02-25 15:50:25,406 - DEBUG - UserLog.py - 春衫 - 日志信息:响应头：{'Server': 'nginx/1.4.2', 'Date': 'Thu, 25 Feb 2021 07:50:24 GMT', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive'}
+2021-02-25 15:50:25,409 - DEBUG - UserLog.py - 春衫 - 日志信息:响应正文：{"code":1,"msg":"密码为空","data":null,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}
+2021-02-25 15:54:10,400 - DEBUG - UserLog.py - 春衫 - 日志信息:请求头：{'User-Agent': 'python-requests/2.24.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'X-Lemonban-Media-Type': 'lemonban.v2', 'Content-Type': 'application/json', 'Content-Length': '79'}
+2021-02-25 15:54:10,408 - DEBUG - UserLog.py - 春衫 - 日志信息:请求正文：{'mobile_phone': '15815541766', 'pwd': '', 'type': '1', 'reg_name': 'mengmeng'}
+2021-02-25 15:54:10,414 - DEBUG - UserLog.py - 春衫 - 日志信息:响应头：{'Server': 'nginx/1.4.2', 'Date': 'Thu, 25 Feb 2021 07:54:09 GMT', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive'}
+2021-02-25 15:54:10,418 - DEBUG - UserLog.py - 春衫 - 日志信息:响应正文：{"code":1,"msg":"密码为空","data":null,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}

@@ -8,7 +8,7 @@ import pytest
 
 import jmespath
 from Base.BaseCase import BaseCase
-from Base.GlobalEnvironment import GlobalEnvironment
+from Base.RelyData import RelyData
 from tools.do_excel import DoExcel
 from tools.http_request import HttpRequest
 from Base.project_path import test_data_path
@@ -37,4 +37,4 @@ class TestAddLoan(BaseCase):
         if memberId != None:
             loan_id = jmespath.search("data.id", res.json())
             # 2、保存到环境变量中
-            GlobalEnvironment().put("loan_id", loan_id)
+            setattr(RelyData, "loan_id", loan_id)

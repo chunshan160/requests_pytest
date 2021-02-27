@@ -48,7 +48,6 @@ class UserLog:
         file_path = folder_path + "/" + log_file_name
 
         # 创建日志文件 写入级别
-
         fh = logging.FileHandler(file_path, encoding='utf-8')
         fh.setLevel(logger_output_level)
         fh.setFormatter(formatter)

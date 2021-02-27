@@ -9,7 +9,7 @@ import random
 import re
 import jmespath
 
-from Base.GlobalEnvironment import GlobalEnvironment
+from Base.RelyData import RelyData
 from tools.do_sql import DoMysql
 
 
@@ -91,7 +91,7 @@ class BaseCase:
         while re.search('{{(.*?)}}', str(sourceStr)):
             key = re.search('{{(.*?)}}', str(sourceStr)).group(0)
             value = re.search('{{(.*?)}}', str(sourceStr)).group(1)
-            new_value = str(GlobalEnvironment().get(value))
+            new_value = str(getattr(RelyData, value))
             sourceStr = str(sourceStr).replace(key, new_value)
 
         return sourceStr
